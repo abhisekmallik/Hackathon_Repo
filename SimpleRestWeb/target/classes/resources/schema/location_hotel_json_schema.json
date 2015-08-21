@@ -1,0 +1,913 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "id": "http://jsonschema.net",
+  "type": "object",
+  "properties": {
+    "data": {
+      "id": "http://jsonschema.net/data",
+      "type": "array",
+      "items": [
+        {
+          "id": "http://jsonschema.net/data/0",
+          "type": "object",
+          "properties": {
+            "see_all_photos": {
+              "id": "http://jsonschema.net/data/0/see_all_photos",
+              "type": "string"
+            },
+            "web_url": {
+              "id": "http://jsonschema.net/data/0/web_url",
+              "type": "string"
+            },
+            "percent_recommended": {
+              "id": "http://jsonschema.net/data/0/percent_recommended",
+              "type": "null"
+            },
+            "location_string": {
+              "id": "http://jsonschema.net/data/0/location_string",
+              "type": "string"
+            },
+            "location_id": {
+              "id": "http://jsonschema.net/data/0/location_id",
+              "type": "string"
+            },
+            "write_review": {
+              "id": "http://jsonschema.net/data/0/write_review",
+              "type": "string"
+            },
+            "price_level": {
+              "id": "http://jsonschema.net/data/0/price_level",
+              "type": "string"
+            },
+            "api_detail_url": {
+              "id": "http://jsonschema.net/data/0/api_detail_url",
+              "type": "string"
+            },
+            "address_obj": {
+              "id": "http://jsonschema.net/data/0/address_obj",
+              "type": "object",
+              "properties": {
+                "street1": {
+                  "id": "http://jsonschema.net/data/0/address_obj/street1",
+                  "type": "string"
+                },
+                "street2": {
+                  "id": "http://jsonschema.net/data/0/address_obj/street2",
+                  "type": "null"
+                },
+                "city": {
+                  "id": "http://jsonschema.net/data/0/address_obj/city",
+                  "type": "string"
+                },
+                "state": {
+                  "id": "http://jsonschema.net/data/0/address_obj/state",
+                  "type": "string"
+                },
+                "country": {
+                  "id": "http://jsonschema.net/data/0/address_obj/country",
+                  "type": "string"
+                },
+                "postalcode": {
+                  "id": "http://jsonschema.net/data/0/address_obj/postalcode",
+                  "type": "string"
+                },
+                "address_string": {
+                  "id": "http://jsonschema.net/data/0/address_obj/address_string",
+                  "type": "string"
+                }
+              }
+            },
+            "category": {
+              "id": "http://jsonschema.net/data/0/category",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "id": "http://jsonschema.net/data/0/category/name",
+                  "type": "string"
+                },
+                "localized_name": {
+                  "id": "http://jsonschema.net/data/0/category/localized_name",
+                  "type": "string"
+                }
+              }
+            },
+            "awards": {
+              "id": "http://jsonschema.net/data/0/awards",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http://jsonschema.net/data/0/awards/0",
+                  "type": "object",
+                  "properties": {
+                    "award_type": {
+                      "id": "http://jsonschema.net/data/0/awards/0/award_type",
+                      "type": "string"
+                    },
+                    "year": {
+                      "id": "http://jsonschema.net/data/0/awards/0/year",
+                      "type": "string"
+                    },
+                    "images": {
+                      "id": "http://jsonschema.net/data/0/awards/0/images",
+                      "type": "object",
+                      "properties": {
+                        "small": {
+                          "id": "http://jsonschema.net/data/0/awards/0/images/small",
+                          "type": "string"
+                        },
+                        "large": {
+                          "id": "http://jsonschema.net/data/0/awards/0/images/large",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "categories": {
+                      "id": "http://jsonschema.net/data/0/awards/0/categories",
+                      "type": "array",
+                      "items": {
+                        "id": "http://jsonschema.net/data/0/awards/0/categories/0",
+                        "type": "string"
+                      }
+                    },
+                    "display_name": {
+                      "id": "http://jsonschema.net/data/0/awards/0/display_name",
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "id": "http://jsonschema.net/data/0/awards/1",
+                  "type": "object",
+                  "properties": {
+                    "award_type": {
+                      "id": "http://jsonschema.net/data/0/awards/1/award_type",
+                      "type": "string"
+                    },
+                    "year": {
+                      "id": "http://jsonschema.net/data/0/awards/1/year",
+                      "type": "string"
+                    },
+                    "images": {
+                      "id": "http://jsonschema.net/data/0/awards/1/images",
+                      "type": "object",
+                      "properties": {
+                        "small": {
+                          "id": "http://jsonschema.net/data/0/awards/1/images/small",
+                          "type": "string"
+                        },
+                        "large": {
+                          "id": "http://jsonschema.net/data/0/awards/1/images/large",
+                          "type": "string"
+                        }
+                      }
+                    },
+                    "categories": {
+                      "id": "http://jsonschema.net/data/0/awards/1/categories",
+                      "type": "array",
+                      "items": []
+                    },
+                    "display_name": {
+                      "id": "http://jsonschema.net/data/0/awards/1/display_name",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "num_reviews": {
+              "id": "http://jsonschema.net/data/0/num_reviews",
+              "type": "string"
+            },
+            "subcategory": {
+              "id": "http://jsonschema.net/data/0/subcategory",
+              "type": "array",
+              "items": {
+                "id": "http://jsonschema.net/data/0/subcategory/0",
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "id": "http://jsonschema.net/data/0/subcategory/0/name",
+                    "type": "string"
+                  },
+                  "localized_name": {
+                    "id": "http://jsonschema.net/data/0/subcategory/0/localized_name",
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "rating_image_url": {
+              "id": "http://jsonschema.net/data/0/rating_image_url",
+              "type": "string"
+            },
+            "name": {
+              "id": "http://jsonschema.net/data/0/name",
+              "type": "string"
+            },
+            "ancestors": {
+              "id": "http://jsonschema.net/data/0/ancestors",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http://jsonschema.net/data/0/ancestors/0",
+                  "type": "object",
+                  "properties": {
+                    "abbrv": {
+                      "id": "http://jsonschema.net/data/0/ancestors/0/abbrv",
+                      "type": "null"
+                    },
+                    "level": {
+                      "id": "http://jsonschema.net/data/0/ancestors/0/level",
+                      "type": "string"
+                    },
+                    "name": {
+                      "id": "http://jsonschema.net/data/0/ancestors/0/name",
+                      "type": "string"
+                    },
+                    "location_id": {
+                      "id": "http://jsonschema.net/data/0/ancestors/0/location_id",
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "id": "http://jsonschema.net/data/0/ancestors/1",
+                  "type": "object",
+                  "properties": {
+                    "abbrv": {
+                      "id": "http://jsonschema.net/data/0/ancestors/1/abbrv",
+                      "type": "string"
+                    },
+                    "level": {
+                      "id": "http://jsonschema.net/data/0/ancestors/1/level",
+                      "type": "string"
+                    },
+                    "name": {
+                      "id": "http://jsonschema.net/data/0/ancestors/1/name",
+                      "type": "string"
+                    },
+                    "location_id": {
+                      "id": "http://jsonschema.net/data/0/ancestors/1/location_id",
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "id": "http://jsonschema.net/data/0/ancestors/2",
+                  "type": "object",
+                  "properties": {
+                    "abbrv": {
+                      "id": "http://jsonschema.net/data/0/ancestors/2/abbrv",
+                      "type": "null"
+                    },
+                    "level": {
+                      "id": "http://jsonschema.net/data/0/ancestors/2/level",
+                      "type": "string"
+                    },
+                    "name": {
+                      "id": "http://jsonschema.net/data/0/ancestors/2/name",
+                      "type": "string"
+                    },
+                    "location_id": {
+                      "id": "http://jsonschema.net/data/0/ancestors/2/location_id",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "longitude": {
+              "id": "http://jsonschema.net/data/0/longitude",
+              "type": "string"
+            },
+            "latitude": {
+              "id": "http://jsonschema.net/data/0/latitude",
+              "type": "string"
+            },
+            "rating": {
+              "id": "http://jsonschema.net/data/0/rating",
+              "type": "string"
+            },
+            "ranking_data": {
+              "id": "http://jsonschema.net/data/0/ranking_data",
+              "type": "object",
+              "properties": {
+                "geo_location_id": {
+                  "id": "http://jsonschema.net/data/0/ranking_data/geo_location_id",
+                  "type": "string"
+                },
+                "ranking_string": {
+                  "id": "http://jsonschema.net/data/0/ranking_data/ranking_string",
+                  "type": "string"
+                },
+                "geo_location_name": {
+                  "id": "http://jsonschema.net/data/0/ranking_data/geo_location_name",
+                  "type": "string"
+                },
+                "ranking_out_of": {
+                  "id": "http://jsonschema.net/data/0/ranking_data/ranking_out_of",
+                  "type": "string"
+                },
+                "ranking": {
+                  "id": "http://jsonschema.net/data/0/ranking_data/ranking",
+                  "type": "string"
+                }
+              }
+            }
+          },
+          "required": [
+            "see_all_photos",
+            "web_url",
+            "percent_recommended",
+            "location_string",
+            "location_id",
+            "write_review",
+            "price_level",
+            "api_detail_url",
+            "address_obj",
+            "category",
+            "awards",
+            "num_reviews",
+            "subcategory",
+            "rating_image_url",
+            "name",
+            "ancestors",
+            "longitude",
+            "latitude",
+            "rating",
+            "ranking_data"
+          ]
+        },
+        {
+          "id": "http://jsonschema.net/data/1",
+          "type": "object",
+          "properties": {
+            "see_all_photos": {
+              "id": "http://jsonschema.net/data/1/see_all_photos",
+              "type": "string"
+            },
+            "web_url": {
+              "id": "http://jsonschema.net/data/1/web_url",
+              "type": "string"
+            },
+            "percent_recommended": {
+              "id": "http://jsonschema.net/data/1/percent_recommended",
+              "type": "null"
+            },
+            "location_string": {
+              "id": "http://jsonschema.net/data/1/location_string",
+              "type": "string"
+            },
+            "location_id": {
+              "id": "http://jsonschema.net/data/1/location_id",
+              "type": "string"
+            },
+            "write_review": {
+              "id": "http://jsonschema.net/data/1/write_review",
+              "type": "string"
+            },
+            "price_level": {
+              "id": "http://jsonschema.net/data/1/price_level",
+              "type": "string"
+            },
+            "api_detail_url": {
+              "id": "http://jsonschema.net/data/1/api_detail_url",
+              "type": "string"
+            },
+            "address_obj": {
+              "id": "http://jsonschema.net/data/1/address_obj",
+              "type": "object",
+              "properties": {
+                "street1": {
+                  "id": "http://jsonschema.net/data/1/address_obj/street1",
+                  "type": "string"
+                },
+                "street2": {
+                  "id": "http://jsonschema.net/data/1/address_obj/street2",
+                  "type": "string"
+                },
+                "city": {
+                  "id": "http://jsonschema.net/data/1/address_obj/city",
+                  "type": "string"
+                },
+                "state": {
+                  "id": "http://jsonschema.net/data/1/address_obj/state",
+                  "type": "string"
+                },
+                "country": {
+                  "id": "http://jsonschema.net/data/1/address_obj/country",
+                  "type": "string"
+                },
+                "postalcode": {
+                  "id": "http://jsonschema.net/data/1/address_obj/postalcode",
+                  "type": "string"
+                },
+                "address_string": {
+                  "id": "http://jsonschema.net/data/1/address_obj/address_string",
+                  "type": "string"
+                }
+              }
+            },
+            "category": {
+              "id": "http://jsonschema.net/data/1/category",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "id": "http://jsonschema.net/data/1/category/name",
+                  "type": "string"
+                },
+                "localized_name": {
+                  "id": "http://jsonschema.net/data/1/category/localized_name",
+                  "type": "string"
+                }
+              }
+            },
+            "awards": {
+              "id": "http://jsonschema.net/data/1/awards",
+              "type": "array",
+              "items": {
+                "id": "http://jsonschema.net/data/1/awards/0",
+                "type": "object",
+                "properties": {
+                  "award_type": {
+                    "id": "http://jsonschema.net/data/1/awards/0/award_type",
+                    "type": "string"
+                  },
+                  "year": {
+                    "id": "http://jsonschema.net/data/1/awards/0/year",
+                    "type": "string"
+                  },
+                  "images": {
+                    "id": "http://jsonschema.net/data/1/awards/0/images",
+                    "type": "object",
+                    "properties": {
+                      "small": {
+                        "id": "http://jsonschema.net/data/1/awards/0/images/small",
+                        "type": "string"
+                      },
+                      "large": {
+                        "id": "http://jsonschema.net/data/1/awards/0/images/large",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "categories": {
+                    "id": "http://jsonschema.net/data/1/awards/0/categories",
+                    "type": "array",
+                    "items": []
+                  },
+                  "display_name": {
+                    "id": "http://jsonschema.net/data/1/awards/0/display_name",
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "num_reviews": {
+              "id": "http://jsonschema.net/data/1/num_reviews",
+              "type": "string"
+            },
+            "subcategory": {
+              "id": "http://jsonschema.net/data/1/subcategory",
+              "type": "array",
+              "items": {
+                "id": "http://jsonschema.net/data/1/subcategory/0",
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "id": "http://jsonschema.net/data/1/subcategory/0/name",
+                    "type": "string"
+                  },
+                  "localized_name": {
+                    "id": "http://jsonschema.net/data/1/subcategory/0/localized_name",
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "rating_image_url": {
+              "id": "http://jsonschema.net/data/1/rating_image_url",
+              "type": "string"
+            },
+            "name": {
+              "id": "http://jsonschema.net/data/1/name",
+              "type": "string"
+            },
+            "ancestors": {
+              "id": "http://jsonschema.net/data/1/ancestors",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http://jsonschema.net/data/1/ancestors/0",
+                  "type": "object",
+                  "properties": {
+                    "abbrv": {
+                      "id": "http://jsonschema.net/data/1/ancestors/0/abbrv",
+                      "type": "null"
+                    },
+                    "level": {
+                      "id": "http://jsonschema.net/data/1/ancestors/0/level",
+                      "type": "string"
+                    },
+                    "name": {
+                      "id": "http://jsonschema.net/data/1/ancestors/0/name",
+                      "type": "string"
+                    },
+                    "location_id": {
+                      "id": "http://jsonschema.net/data/1/ancestors/0/location_id",
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "id": "http://jsonschema.net/data/1/ancestors/1",
+                  "type": "object",
+                  "properties": {
+                    "abbrv": {
+                      "id": "http://jsonschema.net/data/1/ancestors/1/abbrv",
+                      "type": "string"
+                    },
+                    "level": {
+                      "id": "http://jsonschema.net/data/1/ancestors/1/level",
+                      "type": "string"
+                    },
+                    "name": {
+                      "id": "http://jsonschema.net/data/1/ancestors/1/name",
+                      "type": "string"
+                    },
+                    "location_id": {
+                      "id": "http://jsonschema.net/data/1/ancestors/1/location_id",
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "id": "http://jsonschema.net/data/1/ancestors/2",
+                  "type": "object",
+                  "properties": {
+                    "abbrv": {
+                      "id": "http://jsonschema.net/data/1/ancestors/2/abbrv",
+                      "type": "null"
+                    },
+                    "level": {
+                      "id": "http://jsonschema.net/data/1/ancestors/2/level",
+                      "type": "string"
+                    },
+                    "name": {
+                      "id": "http://jsonschema.net/data/1/ancestors/2/name",
+                      "type": "string"
+                    },
+                    "location_id": {
+                      "id": "http://jsonschema.net/data/1/ancestors/2/location_id",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "longitude": {
+              "id": "http://jsonschema.net/data/1/longitude",
+              "type": "string"
+            },
+            "latitude": {
+              "id": "http://jsonschema.net/data/1/latitude",
+              "type": "string"
+            },
+            "rating": {
+              "id": "http://jsonschema.net/data/1/rating",
+              "type": "string"
+            },
+            "ranking_data": {
+              "id": "http://jsonschema.net/data/1/ranking_data",
+              "type": "object",
+              "properties": {
+                "geo_location_id": {
+                  "id": "http://jsonschema.net/data/1/ranking_data/geo_location_id",
+                  "type": "string"
+                },
+                "ranking_string": {
+                  "id": "http://jsonschema.net/data/1/ranking_data/ranking_string",
+                  "type": "string"
+                },
+                "geo_location_name": {
+                  "id": "http://jsonschema.net/data/1/ranking_data/geo_location_name",
+                  "type": "string"
+                },
+                "ranking_out_of": {
+                  "id": "http://jsonschema.net/data/1/ranking_data/ranking_out_of",
+                  "type": "string"
+                },
+                "ranking": {
+                  "id": "http://jsonschema.net/data/1/ranking_data/ranking",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "http://jsonschema.net/data/2",
+          "type": "object",
+          "properties": {
+            "see_all_photos": {
+              "id": "http://jsonschema.net/data/2/see_all_photos",
+              "type": "string"
+            },
+            "web_url": {
+              "id": "http://jsonschema.net/data/2/web_url",
+              "type": "string"
+            },
+            "percent_recommended": {
+              "id": "http://jsonschema.net/data/2/percent_recommended",
+              "type": "null"
+            },
+            "location_string": {
+              "id": "http://jsonschema.net/data/2/location_string",
+              "type": "string"
+            },
+            "location_id": {
+              "id": "http://jsonschema.net/data/2/location_id",
+              "type": "string"
+            },
+            "write_review": {
+              "id": "http://jsonschema.net/data/2/write_review",
+              "type": "string"
+            },
+            "price_level": {
+              "id": "http://jsonschema.net/data/2/price_level",
+              "type": "string"
+            },
+            "api_detail_url": {
+              "id": "http://jsonschema.net/data/2/api_detail_url",
+              "type": "string"
+            },
+            "address_obj": {
+              "id": "http://jsonschema.net/data/2/address_obj",
+              "type": "object",
+              "properties": {
+                "street1": {
+                  "id": "http://jsonschema.net/data/2/address_obj/street1",
+                  "type": "string"
+                },
+                "street2": {
+                  "id": "http://jsonschema.net/data/2/address_obj/street2",
+                  "type": "string"
+                },
+                "city": {
+                  "id": "http://jsonschema.net/data/2/address_obj/city",
+                  "type": "string"
+                },
+                "state": {
+                  "id": "http://jsonschema.net/data/2/address_obj/state",
+                  "type": "string"
+                },
+                "country": {
+                  "id": "http://jsonschema.net/data/2/address_obj/country",
+                  "type": "string"
+                },
+                "postalcode": {
+                  "id": "http://jsonschema.net/data/2/address_obj/postalcode",
+                  "type": "string"
+                },
+                "address_string": {
+                  "id": "http://jsonschema.net/data/2/address_obj/address_string",
+                  "type": "string"
+                }
+              }
+            },
+            "category": {
+              "id": "http://jsonschema.net/data/2/category",
+              "type": "object",
+              "properties": {
+                "name": {
+                  "id": "http://jsonschema.net/data/2/category/name",
+                  "type": "string"
+                },
+                "localized_name": {
+                  "id": "http://jsonschema.net/data/2/category/localized_name",
+                  "type": "string"
+                }
+              }
+            },
+            "awards": {
+              "id": "http://jsonschema.net/data/2/awards",
+              "type": "array",
+              "items": {
+                "id": "http://jsonschema.net/data/2/awards/0",
+                "type": "object",
+                "properties": {
+                  "award_type": {
+                    "id": "http://jsonschema.net/data/2/awards/0/award_type",
+                    "type": "string"
+                  },
+                  "year": {
+                    "id": "http://jsonschema.net/data/2/awards/0/year",
+                    "type": "string"
+                  },
+                  "images": {
+                    "id": "http://jsonschema.net/data/2/awards/0/images",
+                    "type": "object",
+                    "properties": {
+                      "small": {
+                        "id": "http://jsonschema.net/data/2/awards/0/images/small",
+                        "type": "string"
+                      },
+                      "large": {
+                        "id": "http://jsonschema.net/data/2/awards/0/images/large",
+                        "type": "string"
+                      }
+                    }
+                  },
+                  "categories": {
+                    "id": "http://jsonschema.net/data/2/awards/0/categories",
+                    "type": "array",
+                    "items": []
+                  },
+                  "display_name": {
+                    "id": "http://jsonschema.net/data/2/awards/0/display_name",
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "num_reviews": {
+              "id": "http://jsonschema.net/data/2/num_reviews",
+              "type": "string"
+            },
+            "subcategory": {
+              "id": "http://jsonschema.net/data/2/subcategory",
+              "type": "array",
+              "items": {
+                "id": "http://jsonschema.net/data/2/subcategory/0",
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "id": "http://jsonschema.net/data/2/subcategory/0/name",
+                    "type": "string"
+                  },
+                  "localized_name": {
+                    "id": "http://jsonschema.net/data/2/subcategory/0/localized_name",
+                    "type": "string"
+                  }
+                }
+              }
+            },
+            "rating_image_url": {
+              "id": "http://jsonschema.net/data/2/rating_image_url",
+              "type": "string"
+            },
+            "name": {
+              "id": "http://jsonschema.net/data/2/name",
+              "type": "string"
+            },
+            "ancestors": {
+              "id": "http://jsonschema.net/data/2/ancestors",
+              "type": "array",
+              "items": [
+                {
+                  "id": "http://jsonschema.net/data/2/ancestors/0",
+                  "type": "object",
+                  "properties": {
+                    "abbrv": {
+                      "id": "http://jsonschema.net/data/2/ancestors/0/abbrv",
+                      "type": "null"
+                    },
+                    "level": {
+                      "id": "http://jsonschema.net/data/2/ancestors/0/level",
+                      "type": "string"
+                    },
+                    "name": {
+                      "id": "http://jsonschema.net/data/2/ancestors/0/name",
+                      "type": "string"
+                    },
+                    "location_id": {
+                      "id": "http://jsonschema.net/data/2/ancestors/0/location_id",
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "id": "http://jsonschema.net/data/2/ancestors/1",
+                  "type": "object",
+                  "properties": {
+                    "abbrv": {
+                      "id": "http://jsonschema.net/data/2/ancestors/1/abbrv",
+                      "type": "string"
+                    },
+                    "level": {
+                      "id": "http://jsonschema.net/data/2/ancestors/1/level",
+                      "type": "string"
+                    },
+                    "name": {
+                      "id": "http://jsonschema.net/data/2/ancestors/1/name",
+                      "type": "string"
+                    },
+                    "location_id": {
+                      "id": "http://jsonschema.net/data/2/ancestors/1/location_id",
+                      "type": "string"
+                    }
+                  }
+                },
+                {
+                  "id": "http://jsonschema.net/data/2/ancestors/2",
+                  "type": "object",
+                  "properties": {
+                    "abbrv": {
+                      "id": "http://jsonschema.net/data/2/ancestors/2/abbrv",
+                      "type": "null"
+                    },
+                    "level": {
+                      "id": "http://jsonschema.net/data/2/ancestors/2/level",
+                      "type": "string"
+                    },
+                    "name": {
+                      "id": "http://jsonschema.net/data/2/ancestors/2/name",
+                      "type": "string"
+                    },
+                    "location_id": {
+                      "id": "http://jsonschema.net/data/2/ancestors/2/location_id",
+                      "type": "string"
+                    }
+                  }
+                }
+              ]
+            },
+            "longitude": {
+              "id": "http://jsonschema.net/data/2/longitude",
+              "type": "string"
+            },
+            "latitude": {
+              "id": "http://jsonschema.net/data/2/latitude",
+              "type": "string"
+            },
+            "rating": {
+              "id": "http://jsonschema.net/data/2/rating",
+              "type": "string"
+            },
+            "ranking_data": {
+              "id": "http://jsonschema.net/data/2/ranking_data",
+              "type": "object",
+              "properties": {
+                "geo_location_id": {
+                  "id": "http://jsonschema.net/data/2/ranking_data/geo_location_id",
+                  "type": "string"
+                },
+                "ranking_string": {
+                  "id": "http://jsonschema.net/data/2/ranking_data/ranking_string",
+                  "type": "string"
+                },
+                "geo_location_name": {
+                  "id": "http://jsonschema.net/data/2/ranking_data/geo_location_name",
+                  "type": "string"
+                },
+                "ranking_out_of": {
+                  "id": "http://jsonschema.net/data/2/ranking_data/ranking_out_of",
+                  "type": "string"
+                },
+                "ranking": {
+                  "id": "http://jsonschema.net/data/2/ranking_data/ranking",
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "required": [
+        "0",
+        "1",
+        "2"
+      ]
+    },
+    "paging": {
+      "id": "http://jsonschema.net/paging",
+      "type": "object",
+      "properties": {
+        "previous": {
+          "id": "http://jsonschema.net/paging/previous",
+          "type": "null"
+        },
+        "skipped": {
+          "id": "http://jsonschema.net/paging/skipped",
+          "type": "string"
+        },
+        "results": {
+          "id": "http://jsonschema.net/paging/results",
+          "type": "string"
+        },
+        "next": {
+          "id": "http://jsonschema.net/paging/next",
+          "type": "string"
+        },
+        "total_results": {
+          "id": "http://jsonschema.net/paging/total_results",
+          "type": "string"
+        }
+      }
+    }
+  },
+  "required": [
+    "data",
+    "paging"
+  ]
+}
