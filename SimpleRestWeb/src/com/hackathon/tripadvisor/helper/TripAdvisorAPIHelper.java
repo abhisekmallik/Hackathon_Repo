@@ -1,8 +1,10 @@
 package com.hackathon.tripadvisor.helper;
 
+import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import java.io.InputStreamReader;
 
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -14,6 +16,7 @@ import com.hackathon.tripadvisor.api.Example;
 import com.hackathon.tripadvisor.custom.vo.LocationHotelVO;
 
 public class TripAdvisorAPIHelper {
+	
 	
 	/*public static Object getJsonDataFromFile(){
 		Object obj = null;
@@ -38,10 +41,12 @@ public class TripAdvisorAPIHelper {
 		Example example = null;
 		Datum data = null;
 		String response = null;
+		String path = "location_hotel_json.json"; 
 		try {
 			LocationHotelVO locHotelVO = new LocationHotelVO();
 			JSONParser parser = new JSONParser();
-			obj = parser.parse(new FileReader("D:\\HACKATHON\\Project\\TripAdvisor\\location_hotel_json.json"));
+			//obj = parser.parse(new FileReader(filePath + path));
+			obj = parser.parse(new InputStreamReader(TripAdvisorAPIHelper.class.getResourceAsStream(path)));
 			jsonObject = (JSONObject) obj;
 	 		jsonData = jsonObject.toJSONString();
 	 		System.out.println("File Content inside helper: \n" + jsonData);

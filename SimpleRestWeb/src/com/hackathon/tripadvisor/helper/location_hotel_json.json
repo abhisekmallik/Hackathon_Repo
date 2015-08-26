@@ -1,0 +1,245 @@
+{
+  "data": [
+    {
+      "see_all_photos": "http://www.tripadvisor.com/LocationPhotos-g60745-d258705-mMCID-Hotel_Commonwealth-Boston_Massachusetts.html",
+      "web_url": "http://www.tripadvisor.com/Hotel_Review-g60745-d258705-Reviews-mMCID-Hotel_Commonwealth-Boston_Massachusetts.html",
+      "percent_recommended": null,
+      "location_string": "Boston, Massachusetts",
+      "location_id": "258705",
+      "write_review": "http://www.tripadvisor.com/UserReview-g60745-d258705-mMCID-Hotel_Commonwealth-Boston_Massachusetts.html",
+      "price_level": "$$$$",
+      "api_detail_url": "http://api.tripadvisor.com/api/partner/2.0/location/258705?key=<YOUR KEY HERE>",
+      "address_obj": {
+        "street1": "500 Commonwealth Avenue",
+        "street2": null,
+        "city": "Boston",
+        "state": "Massachusetts",
+        "country": "United States",
+        "postalcode": "02215",
+        "address_string": "500 Commonwealth Avenue, Boston, MA 02215"
+      },
+      "category": {
+        "name": "hotel",
+        "localized_name": "Hotel"
+      },
+      "awards": [
+        {
+          "award_type": "Traveler's Choice",
+          "year": "2014",
+          "images": {
+            "small": "http://www.tripadvisor.com/img/cdsi/img2/awards/tchotel_2014_L_R-MCID-5.png",
+            "large": "http://www.tripadvisor.com/img2/awards/TC_2014_downloadable_L_R.jpg"
+          },
+          "categories": [
+            "Top Hotels"
+          ],
+          "display_name": "Traveler's Choice"
+        },
+        {
+          "award_type": "Certificate of Excellence",
+          "year": "2014",
+          "images": {
+            "small": "http://www.tripadvisor.com/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-MCID-5.jpg",
+            "large": "http://www.tripadvisor.com/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2014_en_US_large-MCID-5.jpg"
+          },
+          "categories": [],
+          "display_name": "Certificate of Excellence 2014"
+        }
+      ],
+      "num_reviews": "2583",
+      "subcategory": [
+        {
+          "name": "hotel",
+          "localized_name": "Hotel"
+        }
+      ],
+      "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/5.0-MCID-5.png",
+      "name": "Hotel Commonwealth",
+      "ancestors": [
+        {
+          "abbrv": null,
+          "level": "City",
+          "name": "Boston",
+          "location_id": "60745"
+        },
+        {
+          "abbrv": "MA",
+          "level": "State",
+          "name": "Massachusetts",
+          "location_id": "28942"
+        },
+        {
+          "abbrv": null,
+          "level": "Country",
+          "name": "United States",
+          "location_id": "191"
+        }
+      ],
+      "longitude": "-71.0952",
+      "latitude": "42.34879",
+      "rating": "5.0",
+      "ranking_data": {
+        "geo_location_id": "60745",
+        "ranking_string": "#1 of 77 hotels in Boston",
+        "geo_location_name": "Boston",
+        "ranking_out_of": "77",
+        "ranking": "1"
+      }
+    },
+    {
+      "see_all_photos": "http://www.tripadvisor.com/LocationPhotos-g60745-d89575-mMCID-Boston_Harbor_Hotel-Boston_Massachusetts.html",
+      "web_url": "http://www.tripadvisor.com/Hotel_Review-g60745-d89575-Reviews-mMCID-Boston_Harbor_Hotel-Boston_Massachusetts.html",
+      "percent_recommended": null,
+      "location_string": "Boston, Massachusetts",
+      "location_id": "89575",
+      "write_review": "http://www.tripadvisor.com/UserReview-g60745-d89575-mMCID-Boston_Harbor_Hotel-Boston_Massachusetts.html",
+      "price_level": "$$$$",
+      "api_detail_url": "http://api.tripadvisor.com/api/partner/2.0/location/89575?key=<YOUR KEY HERE>",
+      "address_obj": {
+        "street1": "70 Rowes Wharf",
+        "street2": "",
+        "city": "Boston",
+        "state": "Massachusetts",
+        "country": "United States",
+        "postalcode": "02110",
+        "address_string": "70 Rowes Wharf, Boston, MA 02110"
+      },
+      "category": {
+        "name": "hotel",
+        "localized_name": "Hotel"
+      },
+      "awards": [
+        {
+          "award_type": "Certificate of Excellence",
+          "year": "2014",
+          "images": {
+            "small": "http://www.tripadvisor.com/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-MCID-5.jpg",
+            "large": "http://www.tripadvisor.com/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2014_en_US_large-MCID-5.jpg"
+          },
+          "categories": [],
+          "display_name": "Certificate of Excellence 2014"
+        }
+      ],
+      "num_reviews": "1071",
+      "subcategory": [
+        {
+          "name": "hotel",
+          "localized_name": "Hotel"
+        }
+      ],
+      "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-MCID-5.png",
+      "name": "Boston Harbor Hotel",
+      "ancestors": [
+        {
+          "abbrv": null,
+          "level": "City",
+          "name": "Boston",
+          "location_id": "60745"
+        },
+        {
+          "abbrv": "MA",
+          "level": "State",
+          "name": "Massachusetts",
+          "location_id": "28942"
+        },
+        {
+          "abbrv": null,
+          "level": "Country",
+          "name": "United States",
+          "location_id": "191"
+        }
+      ],
+      "longitude": "-71.04995",
+      "latitude": "42.356094",
+      "rating": "4.5",
+      "ranking_data": {
+        "geo_location_id": "60745",
+        "ranking_string": "#2 of 77 hotels in Boston",
+        "geo_location_name": "Boston",
+        "ranking_out_of": "77",
+        "ranking": "2"
+      }
+    },
+    {
+      "see_all_photos": "http://www.tripadvisor.com/LocationPhotos-g60745-d94330-mMCID-Seaport_Boston_Hotel-Boston_Massachusetts.html",
+      "web_url": "http://www.tripadvisor.com/Hotel_Review-g60745-d94330-Reviews-mMCID-Seaport_Boston_Hotel-Boston_Massachusetts.html",
+      "percent_recommended": null,
+      "location_string": "Boston, Massachusetts",
+      "location_id": "94330",
+      "write_review": "http://www.tripadvisor.com/UserReview-g60745-d94330-mMCID-Seaport_Boston_Hotel-Boston_Massachusetts.html",
+      "price_level": "$$$$",
+      "api_detail_url": "http://api.tripadvisor.com/api/partner/2.0/location/94330?key=<YOUR KEY HERE>",
+      "address_obj": {
+        "street1": "1 Seaport Lane",
+        "street2": "",
+        "city": "Boston",
+        "state": "Massachusetts",
+        "country": "United States",
+        "postalcode": "02210",
+        "address_string": "1 Seaport Lane, Boston, MA 02210"
+      },
+      "category": {
+        "name": "hotel",
+        "localized_name": "Hotel"
+      },
+      "awards": [
+        {
+          "award_type": "Certificate of Excellence",
+          "year": "2014",
+          "images": {
+            "small": "http://www.tripadvisor.com/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_small-MCID-5.jpg",
+            "large": "http://www.tripadvisor.com/img/cdsi/img2/awards/CERTIFICATE_OF_EXCELLENCE_2014_en_US_large-MCID-5.jpg"
+          },
+          "categories": [],
+          "display_name": "Certificate of Excellence 2014"
+        }
+      ],
+      "num_reviews": "1813",
+      "subcategory": [
+        {
+          "name": "hotel",
+          "localized_name": "Hotel"
+        }
+      ],
+      "rating_image_url": "http://www.tripadvisor.com/img/cdsi/img2/ratings/traveler/4.5-MCID-5.png",
+      "name": "Seaport Boston Hotel",
+      "ancestors": [
+        {
+          "abbrv": null,
+          "level": "City",
+          "name": "Boston",
+          "location_id": "60745"
+        },
+        {
+          "abbrv": "MA",
+          "level": "State",
+          "name": "Massachusetts",
+          "location_id": "28942"
+        },
+        {
+          "abbrv": null,
+          "level": "Country",
+          "name": "United States",
+          "location_id": "191"
+        }
+      ],
+      "longitude": "-71.0413",
+      "latitude": "42.349503",
+      "rating": "4.5",
+      "ranking_data": {
+        "geo_location_id": "60745",
+        "ranking_string": "#3 of 77 hotels in Boston",
+        "geo_location_name": "Boston",
+        "ranking_out_of": "77",
+        "ranking": "3"
+      }
+    }
+  ],
+  "paging": {
+    "previous": null,
+    "skipped": "0",
+    "results": "3",
+    "next": "http://api.tripadvisor.com/api/partner/2.0/location/60745/hotels?key=<YOUR KEY HERE>&limit=3&offset=3",
+    "total_results": "10"
+  }
+}
