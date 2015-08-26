@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
+@class FlightSearchVC;
+
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-
+@property (strong, nonatomic) FlightSearchVC *searchVC;
 
 @end
 

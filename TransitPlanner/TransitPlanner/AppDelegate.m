@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import "FlightSearchVC.h"
+#import "UIColor+CustomColors.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +18,17 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [self customizeNavigationBar];
+    [self customizeNavigationBarButton];
+    [self customizeSegmentedControl];
+    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    FlightSearchVC *flight = [[FlightSearchVC alloc] initWithNibName:@"FlightSearchVC" bundle:nil];
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:flight];
+    self.window.rootViewController = nav;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -40,6 +52,77 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - Custom Methods
+- (void)customizeNavigationBar
+{
+    [[UINavigationBar appearance] setBackgroundImage:[UIColor imageWithColor:[UIColor colorWithRed:(247/255.0) green:(247/255.0) blue:(247/255.0) alpha:1]] forBarMetrics:UIBarMetricsDefault];
+    
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor clearColor];
+    shadow.shadowBlurRadius = 0.0;
+    shadow.shadowOffset = CGSizeMake(0.0, 2.0);
+    
+    // Customize the title text for *all* UINavigationBars
+    [[UINavigationBar appearance] setTitleTextAttributes:
+     @{NSForegroundColorAttributeName: [UIColor colorFromHex:@"#414141"],
+       NSShadowAttributeName: shadow,
+       NSFontAttributeName: [UIFont fontWithName:@"Emirates SM"/*kNavBarTitleFont*/ size:17]}];
+}
+
+- (void)customizeNavigationBarButton
+{
+    UIImage *image = [UIColor imageWithColor:[UIColor colorWithRed:(247/255.0) green:(247/255.0) blue:(247/255.0) alpha:1]];
+    
+    // Change the appreance of Back Button
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:image
+                                                      forState:UIControlStateHighlighted
+                                                    barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:image
+                                                      forState:UIControlStateNormal
+                                                    barMetrics:UIBarMetricsDefault];
+    
+    //    [[UIBarButtonItem appearance] setBackButtonBackgroundImage:image
+    //                                                      forState:UIControlStateSelected
+    //                                                    barMetrics:UIBarMetricsDefault];
+    
+    
+    // Change the appreance of bar button
+    //appearanceWhenContainedIn:[UINavigationBar class], [UIToolbar class], nil
+    [[UIBarButtonItem appearance] setBackgroundImage:image forState:UIControlStateNormal barMetrics:UIBarMetricsDefault];
+    [[UIBarButtonItem appearance] setBackgroundImage:image forState:UIControlStateHighlighted barMetrics:UIBarMetricsDefault];
+    //    [[UIBarButtonItem appearance] setBackgroundImage:image forState:UIControlStateSelected barMetrics:UIBarMetricsDefault];
+    
+    NSShadow *shadow = [[NSShadow alloc] init];
+    shadow.shadowColor = [UIColor clearColor];
+    shadow.shadowBlurRadius = 0.0;
+    shadow.shadowOffset = CGSizeMake(0.0, 2.0);
+    
+    // Change bar button text attributes
+    [[UIBarButtonItem appearance]
+     setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorFromHex:@"#d71921"],
+                              NSShadowAttributeName: shadow,
+                              NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Light" size:17]}
+     forState:UIControlStateNormal];
+    
+    [[UIBarButtonItem appearance]
+     setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor colorFromHex:@"#d71921"],
+                              NSShadowAttributeName: shadow,
+                              NSFontAttributeName: [UIFont fontWithName:@"HelveticaNeue-Light" size:17]}
+     forState:UIControlStateHighlighted];
+    
+    //    [[UIBarButtonItem appearance]
+    //     setTitleTextAttributes:@{UITextAttributeTextColor: [UIColor colorFromHex:kNavBarButtonItemFontColor],
+    //                              UITextAttributeTextShadowColor: [UIColor clearColor],
+    //                              UITextAttributeFont: [UIFont fontWithName:kNavBarButtonItemFont size:17]}
+    //     forState:UIControlStateSelected];
+    
+}
+
+- (void)customizeSegmentedControl
+{
+    [[UISegmentedControl appearance] setTintColor:[UIColor colorFromHex:@"#d71921"]];
 }
 
 @end
