@@ -7,12 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A44C4E21B8CE5C300AB1F4F /* FlightSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A44C4E01B8CE5C300AB1F4F /* FlightSearchVC.m */; };
+		1A44C4E31B8CE5C300AB1F4F /* FlightSearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A44C4E11B8CE5C300AB1F4F /* FlightSearchVC.xib */; };
+		1A44C4E61B8CE79E00AB1F4F /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A44C4E51B8CE79E00AB1F4F /* UIColor+CustomColors.m */; };
+		1A44C4EB1B8CE8B700AB1F4F /* Emirates SB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A44C4E81B8CE8B700AB1F4F /* Emirates SB.otf */; };
+		1A44C4EC1B8CE8B700AB1F4F /* Emirates SL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A44C4E91B8CE8B700AB1F4F /* Emirates SL.otf */; };
+		1A44C4ED1B8CE8B700AB1F4F /* Emirates SM.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A44C4EA1B8CE8B700AB1F4F /* Emirates SM.otf */; };
 		1A6A38C21B862AF5009DF74D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C11B862AF5009DF74D /* main.m */; };
 		1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C41B862AF5009DF74D /* AppDelegate.m */; };
-		1A6A38C81B862AF5009DF74D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C71B862AF5009DF74D /* ViewController.m */; };
-		1A6A38CB1B862AF5009DF74D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A38C91B862AF5009DF74D /* Main.storyboard */; };
 		1A6A38CD1B862AF5009DF74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A38CC1B862AF5009DF74D /* Assets.xcassets */; };
-		1A6A38D01B862AF5009DF74D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A38CE1B862AF5009DF74D /* LaunchScreen.storyboard */; };
 		1A6A38DB1B862AF5009DF74D /* TransitPlannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38DA1B862AF5009DF74D /* TransitPlannerTests.m */; };
 		1A6A38E61B862AF5009DF74D /* TransitPlannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38E51B862AF5009DF74D /* TransitPlannerUITests.m */; };
 /* End PBXBuildFile section */
@@ -35,15 +38,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A44C4DF1B8CE5C300AB1F4F /* FlightSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightSearchVC.h; sourceTree = "<group>"; };
+		1A44C4E01B8CE5C300AB1F4F /* FlightSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightSearchVC.m; sourceTree = "<group>"; };
+		1A44C4E11B8CE5C300AB1F4F /* FlightSearchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightSearchVC.xib; sourceTree = "<group>"; };
+		1A44C4E41B8CE79E00AB1F4F /* UIColor+CustomColors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CustomColors.h"; sourceTree = "<group>"; };
+		1A44C4E51B8CE79E00AB1F4F /* UIColor+CustomColors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CustomColors.m"; sourceTree = "<group>"; };
+		1A44C4E81B8CE8B700AB1F4F /* Emirates SB.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Emirates SB.otf"; sourceTree = "<group>"; };
+		1A44C4E91B8CE8B700AB1F4F /* Emirates SL.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Emirates SL.otf"; sourceTree = "<group>"; };
+		1A44C4EA1B8CE8B700AB1F4F /* Emirates SM.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Emirates SM.otf"; sourceTree = "<group>"; };
 		1A6A38BD1B862AF5009DF74D /* TransitPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6A38C11B862AF5009DF74D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A6A38C31B862AF5009DF74D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1A6A38C41B862AF5009DF74D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1A6A38C61B862AF5009DF74D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1A6A38C71B862AF5009DF74D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		1A6A38CA1B862AF5009DF74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1A6A38CC1B862AF5009DF74D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1A6A38CF1B862AF5009DF74D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A6A38D11B862AF5009DF74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A6A38D61B862AF5009DF74D /* TransitPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6A38DA1B862AF5009DF74D /* TransitPlannerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitPlannerTests.m; sourceTree = "<group>"; };
@@ -78,6 +85,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1A44C4E71B8CE89F00AB1F4F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1A44C4E81B8CE8B700AB1F4F /* Emirates SB.otf */,
+				1A44C4E91B8CE8B700AB1F4F /* Emirates SL.otf */,
+				1A44C4EA1B8CE8B700AB1F4F /* Emirates SM.otf */,
+			);
+			name = Fonts;
+			sourceTree = "<group>";
+		};
 		1A6A38B41B862AF5009DF74D = {
 			isa = PBXGroup;
 			children = (
@@ -101,15 +118,17 @@
 		1A6A38BF1B862AF5009DF74D /* TransitPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				1A44C4E71B8CE89F00AB1F4F /* Fonts */,
+				1A44C4E41B8CE79E00AB1F4F /* UIColor+CustomColors.h */,
+				1A44C4E51B8CE79E00AB1F4F /* UIColor+CustomColors.m */,
 				1A6A38C31B862AF5009DF74D /* AppDelegate.h */,
 				1A6A38C41B862AF5009DF74D /* AppDelegate.m */,
-				1A6A38C61B862AF5009DF74D /* ViewController.h */,
-				1A6A38C71B862AF5009DF74D /* ViewController.m */,
-				1A6A38C91B862AF5009DF74D /* Main.storyboard */,
 				1A6A38CC1B862AF5009DF74D /* Assets.xcassets */,
-				1A6A38CE1B862AF5009DF74D /* LaunchScreen.storyboard */,
 				1A6A38D11B862AF5009DF74D /* Info.plist */,
 				1A6A38C01B862AF5009DF74D /* Supporting Files */,
+				1A44C4DF1B8CE5C300AB1F4F /* FlightSearchVC.h */,
+				1A44C4E01B8CE5C300AB1F4F /* FlightSearchVC.m */,
+				1A44C4E11B8CE5C300AB1F4F /* FlightSearchVC.xib */,
 			);
 			path = TransitPlanner;
 			sourceTree = "<group>";
@@ -243,9 +262,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6A38D01B862AF5009DF74D /* LaunchScreen.storyboard in Resources */,
+				1A44C4E31B8CE5C300AB1F4F /* FlightSearchVC.xib in Resources */,
+				1A44C4ED1B8CE8B700AB1F4F /* Emirates SM.otf in Resources */,
+				1A44C4EB1B8CE8B700AB1F4F /* Emirates SB.otf in Resources */,
 				1A6A38CD1B862AF5009DF74D /* Assets.xcassets in Resources */,
-				1A6A38CB1B862AF5009DF74D /* Main.storyboard in Resources */,
+				1A44C4EC1B8CE8B700AB1F4F /* Emirates SL.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,8 +291,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1A6A38C81B862AF5009DF74D /* ViewController.m in Sources */,
+				1A44C4E21B8CE5C300AB1F4F /* FlightSearchVC.m in Sources */,
 				1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */,
+				1A44C4E61B8CE79E00AB1F4F /* UIColor+CustomColors.m in Sources */,
 				1A6A38C21B862AF5009DF74D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -306,25 +328,6 @@
 			targetProxy = 1A6A38E21B862AF5009DF74D /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		1A6A38C91B862AF5009DF74D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A6A38CA1B862AF5009DF74D /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		1A6A38CE1B862AF5009DF74D /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1A6A38CF1B862AF5009DF74D /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1A6A38E81B862AF5009DF74D /* Debug */ = {
@@ -412,9 +415,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TransitPlanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.hackathon.TransitPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -423,9 +428,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TransitPlanner/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.hackathon.TransitPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -496,6 +503,7 @@
 				1A6A38EC1B862AF5009DF74D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A6A38ED1B862AF5009DF74D /* Build configuration list for PBXNativeTarget "TransitPlannerTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +512,7 @@
 				1A6A38EF1B862AF5009DF74D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A6A38F01B862AF5009DF74D /* Build configuration list for PBXNativeTarget "TransitPlannerUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +521,7 @@
 				1A6A38F21B862AF5009DF74D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
