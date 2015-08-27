@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>24 hours</key>
+	<dict>
+		<key>Itinerary</key>
+		<dict>
+			<key>Day1</key>
+			<array>
+				<dict>
+					<key>Duration</key>
+					<string>4 hours</string>
+					<key>Dubai City Tour</key>
+					<string>Gold and Spice souks, Dubai Museum, Photographic opportunities at Burj Khalifa the world’s tallest building, The iconic Atlantis resort on The Palm Jumeirah</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Price</key>
+		<dict>
+			<key>adult</key>
+			<string>700</string>
+			<key>child</key>
+			<string>500</string>
+		</dict>
+	</dict>
+	<key>48 hours</key>
+	<dict>
+		<key>Itinerary</key>
+		<dict>
+			<key>Day1</key>
+			<array>
+				<dict>
+					<key>Duration</key>
+					<string>4 hours</string>
+					<key>Dubai City Tour</key>
+					<string>Gold and Spice souks, Dubai Museum, Photographic opportunities at Burj Khalifa the world’s tallest building, The iconic Atlantis resort on The Palm Jumeirah</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Price</key>
+		<dict>
+			<key>adult</key>
+			<string>1500</string>
+			<key>child</key>
+			<string>1200</string>
+		</dict>
+	</dict>
+	<key>72 hours</key>
+	<dict>
+		<key>Itinerary</key>
+		<dict>
+			<key>Day1</key>
+			<array>
+				<dict>
+					<key>Duration</key>
+					<string>4 hours</string>
+					<key>Dubai City Tour</key>
+					<string>Gold and Spice souks, Dubai Museum, Photographic opportunities at Burj Khalifa the world’s tallest building, The iconic Atlantis resort on The Palm Jumeirah</string>
+				</dict>
+			</array>
+		</dict>
+		<key>Price</key>
+		<dict>
+			<key>adult</key>
+			<string>700</string>
+			<key>child</key>
+			<string>500</string>
+		</dict>
+	</dict>
+</dict>
+</plist>

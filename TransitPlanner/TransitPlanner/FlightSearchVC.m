@@ -7,8 +7,10 @@
 //
 
 #import "FlightSearchVC.h"
+#import "PackageOverview.h"
 
 @interface FlightSearchVC ()
+- (IBAction)infoAction:(UIButton *)sender;
 
 @end
 
@@ -17,6 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"Search Result";
+    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +40,8 @@
 }
 */
 
+- (IBAction)infoAction:(UIButton *)sender {
+    PackageOverview *overview = [[PackageOverview alloc] initWithNibName:@"PackageOverview" bundle:nil];
+    [self.navigationController pushViewController:overview animated:YES];
+}
 @end

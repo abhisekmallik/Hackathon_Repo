@@ -18,6 +18,17 @@
 		1A6A38CD1B862AF5009DF74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A38CC1B862AF5009DF74D /* Assets.xcassets */; };
 		1A6A38DB1B862AF5009DF74D /* TransitPlannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38DA1B862AF5009DF74D /* TransitPlannerTests.m */; };
 		1A6A38E61B862AF5009DF74D /* TransitPlannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38E51B862AF5009DF74D /* TransitPlannerUITests.m */; };
+		1AADF8521B8EE89B00CDA0E3 /* Tours.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8511B8EE89B00CDA0E3 /* Tours.plist */; settings = {ASSET_TAGS = (); }; };
+		1AADF8541B8F013D00CDA0E3 /* DubaiCal.html in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8531B8F013D00CDA0E3 /* DubaiCal.html */; settings = {ASSET_TAGS = (); }; };
+		1AADF8581B8F06AF00CDA0E3 /* PackListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AADF8561B8F06AF00CDA0E3 /* PackListing.m */; settings = {ASSET_TAGS = (); }; };
+		1AADF8591B8F06AF00CDA0E3 /* PackListing.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8571B8F06AF00CDA0E3 /* PackListing.xib */; settings = {ASSET_TAGS = (); }; };
+		1AADF85D1B8F20F900CDA0E3 /* AdvFlightSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AADF85B1B8F20F900CDA0E3 /* AdvFlightSearch.m */; settings = {ASSET_TAGS = (); }; };
+		1AADF85E1B8F20F900CDA0E3 /* AdvFlightSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF85C1B8F20F900CDA0E3 /* AdvFlightSearch.xib */; settings = {ASSET_TAGS = (); }; };
+		1AADF8621B8F335500CDA0E3 /* BookingCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AADF8601B8F335500CDA0E3 /* BookingCont.m */; settings = {ASSET_TAGS = (); }; };
+		1AADF8631B8F335500CDA0E3 /* BookingCont.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8611B8F335500CDA0E3 /* BookingCont.xib */; settings = {ASSET_TAGS = (); }; };
+		1AE8E3351B8E292900CFC017 /* final_brochure_25sept2014_v2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8E3341B8E292900CFC017 /* final_brochure_25sept2014_v2.pdf */; };
+		1AE8E3391B8E2A1900CFC017 /* PackageOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8E3371B8E2A1900CFC017 /* PackageOverview.m */; };
+		1AE8E33A1B8E2A1900CFC017 /* PackageOverview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8E3381B8E2A1900CFC017 /* PackageOverview.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +69,21 @@
 		1A6A38E11B862AF5009DF74D /* TransitPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6A38E51B862AF5009DF74D /* TransitPlannerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitPlannerUITests.m; sourceTree = "<group>"; };
 		1A6A38E71B862AF5009DF74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AADF8511B8EE89B00CDA0E3 /* Tours.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tours.plist; sourceTree = "<group>"; };
+		1AADF8531B8F013D00CDA0E3 /* DubaiCal.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = DubaiCal.html; sourceTree = "<group>"; };
+		1AADF8551B8F06AF00CDA0E3 /* PackListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackListing.h; sourceTree = "<group>"; };
+		1AADF8561B8F06AF00CDA0E3 /* PackListing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackListing.m; sourceTree = "<group>"; };
+		1AADF8571B8F06AF00CDA0E3 /* PackListing.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PackListing.xib; sourceTree = "<group>"; };
+		1AADF85A1B8F20F900CDA0E3 /* AdvFlightSearch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdvFlightSearch.h; sourceTree = "<group>"; };
+		1AADF85B1B8F20F900CDA0E3 /* AdvFlightSearch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdvFlightSearch.m; sourceTree = "<group>"; };
+		1AADF85C1B8F20F900CDA0E3 /* AdvFlightSearch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AdvFlightSearch.xib; sourceTree = "<group>"; };
+		1AADF85F1B8F335500CDA0E3 /* BookingCont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookingCont.h; sourceTree = "<group>"; };
+		1AADF8601B8F335500CDA0E3 /* BookingCont.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookingCont.m; sourceTree = "<group>"; };
+		1AADF8611B8F335500CDA0E3 /* BookingCont.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookingCont.xib; sourceTree = "<group>"; };
+		1AE8E3341B8E292900CFC017 /* final_brochure_25sept2014_v2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = final_brochure_25sept2014_v2.pdf; sourceTree = "<group>"; };
+		1AE8E3361B8E2A1900CFC017 /* PackageOverview.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageOverview.h; sourceTree = "<group>"; };
+		1AE8E3371B8E2A1900CFC017 /* PackageOverview.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageOverview.m; sourceTree = "<group>"; };
+		1AE8E3381B8E2A1900CFC017 /* PackageOverview.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PackageOverview.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +155,18 @@
 				1A44C4DF1B8CE5C300AB1F4F /* FlightSearchVC.h */,
 				1A44C4E01B8CE5C300AB1F4F /* FlightSearchVC.m */,
 				1A44C4E11B8CE5C300AB1F4F /* FlightSearchVC.xib */,
+				1AE8E3361B8E2A1900CFC017 /* PackageOverview.h */,
+				1AE8E3371B8E2A1900CFC017 /* PackageOverview.m */,
+				1AE8E3381B8E2A1900CFC017 /* PackageOverview.xib */,
+				1AADF8551B8F06AF00CDA0E3 /* PackListing.h */,
+				1AADF8561B8F06AF00CDA0E3 /* PackListing.m */,
+				1AADF8571B8F06AF00CDA0E3 /* PackListing.xib */,
+				1AADF85A1B8F20F900CDA0E3 /* AdvFlightSearch.h */,
+				1AADF85B1B8F20F900CDA0E3 /* AdvFlightSearch.m */,
+				1AADF85C1B8F20F900CDA0E3 /* AdvFlightSearch.xib */,
+				1AADF85F1B8F335500CDA0E3 /* BookingCont.h */,
+				1AADF8601B8F335500CDA0E3 /* BookingCont.m */,
+				1AADF8611B8F335500CDA0E3 /* BookingCont.xib */,
 			);
 			path = TransitPlanner;
 			sourceTree = "<group>";
@@ -136,7 +174,10 @@
 		1A6A38C01B862AF5009DF74D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1AE8E3341B8E292900CFC017 /* final_brochure_25sept2014_v2.pdf */,
 				1A6A38C11B862AF5009DF74D /* main.m */,
+				1AADF8511B8EE89B00CDA0E3 /* Tours.plist */,
+				1AADF8531B8F013D00CDA0E3 /* DubaiCal.html */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -263,10 +304,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A44C4E31B8CE5C300AB1F4F /* FlightSearchVC.xib in Resources */,
+				1AADF8631B8F335500CDA0E3 /* BookingCont.xib in Resources */,
 				1A44C4ED1B8CE8B700AB1F4F /* Emirates SM.otf in Resources */,
+				1AADF8521B8EE89B00CDA0E3 /* Tours.plist in Resources */,
 				1A44C4EB1B8CE8B700AB1F4F /* Emirates SB.otf in Resources */,
 				1A6A38CD1B862AF5009DF74D /* Assets.xcassets in Resources */,
+				1AE8E3351B8E292900CFC017 /* final_brochure_25sept2014_v2.pdf in Resources */,
 				1A44C4EC1B8CE8B700AB1F4F /* Emirates SL.otf in Resources */,
+				1AADF85E1B8F20F900CDA0E3 /* AdvFlightSearch.xib in Resources */,
+				1AADF8591B8F06AF00CDA0E3 /* PackListing.xib in Resources */,
+				1AADF8541B8F013D00CDA0E3 /* DubaiCal.html in Resources */,
+				1AE8E33A1B8E2A1900CFC017 /* PackageOverview.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -292,8 +340,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A44C4E21B8CE5C300AB1F4F /* FlightSearchVC.m in Sources */,
+				1AADF85D1B8F20F900CDA0E3 /* AdvFlightSearch.m in Sources */,
+				1AADF8581B8F06AF00CDA0E3 /* PackListing.m in Sources */,
 				1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */,
 				1A44C4E61B8CE79E00AB1F4F /* UIColor+CustomColors.m in Sources */,
+				1AADF8621B8F335500CDA0E3 /* BookingCont.m in Sources */,
+				1AE8E3391B8E2A1900CFC017 /* PackageOverview.m in Sources */,
 				1A6A38C21B862AF5009DF74D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,7 +467,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TransitPlanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.hackathon.TransitPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -428,7 +480,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = TransitPlanner/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.hackathon.TransitPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
