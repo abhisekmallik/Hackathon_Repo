@@ -10,6 +10,7 @@
 
 @interface WebDisplay : UIViewController
 
-//@property ()
+@property (nonatomic, assign) BOOL dubaiCalendars;
+@property (nonatomic, assign) BOOL dubaiStopovers;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "PackageOverview.h"
 #import "PackListing.h"
+#import "WebDisplay.h"
 
 @interface PackageOverview () <UIWebViewDelegate>
 
@@ -26,12 +27,6 @@
     UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(leftTopBarButtonClickedAction:)];
     
     self.navigationController.topViewController.navigationItem.leftBarButtonItem = leftBtn;
-    
-    
-//    NSString *path = [[NSBundle mainBundle] pathForResource:@"final_brochure_25sept2014_v2" ofType:@"pdf"];
-//    NSURL *targetURL = [NSURL fileURLWithPath:path];
-//    NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
-//    [_webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,8 +65,14 @@
 }
 
 - (IBAction)dubaiCalendar:(UIButton *)sender {
+    WebDisplay *web = [[WebDisplay alloc] initWithNibName:@"WebDisplay" bundle:nil];
+    web.dubaiCalendars = YES;
+    [self.navigationController pushViewController:web animated:YES];
 }
 
 - (IBAction)stopoverInfo:(UIButton *)sender {
+    WebDisplay *web = [[WebDisplay alloc] initWithNibName:@"WebDisplay" bundle:nil];
+    web.dubaiStopovers = YES;
+    [self.navigationController pushViewController:web animated:YES];
 }
 @end
