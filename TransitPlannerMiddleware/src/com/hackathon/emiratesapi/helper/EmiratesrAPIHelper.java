@@ -9,11 +9,13 @@ import java.security.GeneralSecurityException;
 import java.security.SecureRandom;
 import java.security.cert.X509Certificate;
 
-import javax.net.ssl.HttpsURLConnection;
+import sun.net.www.protocol.http.HttpURLConnection;
 import javax.net.ssl.SSLContext;
 import javax.net.ssl.SSLSocketFactory;
 import javax.net.ssl.TrustManager;
 import javax.net.ssl.X509TrustManager;
+
+import com.hackathon.common.constants.TransitPlannerConstants;
 
 public class EmiratesrAPIHelper {
 	
@@ -42,11 +44,12 @@ public class EmiratesrAPIHelper {
 		try {
 			
 			URL url = new URL(apiUrl);
-			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
+			HttpURLConnection conn = (HttpURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
 			conn.setRequestProperty("Accept", "application/json");
-			conn.setSSLSocketFactory(EmiratesrAPIHelper.getTrustedFactory());
-			conn.setRequestProperty("Authorization", "Bearer ba83920f8d29746aa2745375e547d8");
+		//	conn.setSSLSocketFactory(EmiratesrAPIHelper.getTrustedFactory());
+			/*if(TransitPlannerConstants.EMIRTAES_HOTEL_LIST_URL.equals(apiUrl))
+			conn.setRequestProperty("Authorization", "Bearer ba83920f8d29746aa2745375e547d8");*/
 
 			if (conn.getResponseCode() != 200) {
 				throw new RuntimeException("Failed : HTTP error code : "
