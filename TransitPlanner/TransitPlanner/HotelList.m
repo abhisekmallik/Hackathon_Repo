@@ -8,6 +8,9 @@
 
 #import "HotelList.h"
 #import "HotelCell.h"
+#import <GoogleMaps/GoogleMaps.h>
+#import "DataManager.h"
+#import "HotelModel.h"
 
 @interface HotelList ()
 @property (weak, nonatomic) IBOutlet UIScrollView *baseScrollview;
@@ -19,14 +22,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    DataManager *mgr = [DataManager sharedInstance];
+    
+    
     CGFloat y = 0.0f;
-    for (int i = 0; i < 20; i++) {
+    for (HotelModel *model in mgr.arrHotels) {
+
         NSArray *xib = [[NSBundle mainBundle] loadNibNamed:@"HotelCell" owner:self options:nil];
         HotelCell * cell = [xib firstObject];
-        cell.hotelName.text = @"Airport Hotel";
-        cell.hotelAddress.text = @"Dubai International Airport, Terminal 3, Garhoud, Dubai";
-        cell.hotelPaxCount.text = @"Adult: 1";
-        cell.hotelRoomPrice.text = @"AED 159";
+        cell.model = model;
+
         [cell setupView];
         
         CGRect rect = cell.frame;
@@ -62,5 +67,23 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+- (void)initializeGoogleMap
+{
+    static dispatch_once_t pred = 0;\
+    dispatch_once(&pred, ^{
+        [GMSServices provideAPIKey:@"AIzaSyBiIw4eigxImLmP7uutjV3rtV2GSNq0n2k"];
+        
+        GMSServices *gmsServices = [GMSServices sharedServices];
+        
+        NSLog(@"Google Map SDK Version: %@", [GMSServices SDKVersion]);
+        
+        // Log the required open source licenses!  Yes, just NSLog-ing them is not
+        // enough but is good for a demo.
+        NSLog(@"Open source licenses:\n%@", [GMSServices openSourceLicenseInfo]);
+    });
+    
+}
 
 @end

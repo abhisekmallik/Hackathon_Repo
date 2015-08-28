@@ -37,6 +37,16 @@
 		1A4E58171B8FAD4100050267 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58161B8FAD4100050267 /* ImageIO.framework */; };
 		1A4E58191B8FAD4900050267 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58181B8FAD4900050267 /* GLKit.framework */; };
 		1A4E581B1B8FAD4F00050267 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E581A1B8FAD4F00050267 /* CoreLocation.framework */; };
+		1A4E583A1B90560C00050267 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E58391B90560C00050267 /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
+		1A4E583D1B9056B500050267 /* HotelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E583C1B9056B500050267 /* HotelModel.m */; settings = {ASSET_TAGS = (); }; };
+		1A4E583F1B90580300050267 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E583E1B90580300050267 /* LocalAuthentication.framework */; };
+		1A4E58411B90583C00050267 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58401B90583C00050267 /* libc++.tbd */; };
+		1A4E58431B90585600050267 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58421B90585600050267 /* CoreData.framework */; };
+		1A4E58451B9058A400050267 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58441B9058A400050267 /* SystemConfiguration.framework */; };
+		1A4E58471B9058B100050267 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58461B9058B100050267 /* CoreMotion.framework */; };
+		1A4E58491B9058C000050267 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58481B9058C000050267 /* CoreTelephony.framework */; };
+		1A4E584B1B9058CB00050267 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E584A1B9058CB00050267 /* Social.framework */; };
+		1A4E584D1B9058D200050267 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E584C1B9058D200050267 /* CoreText.framework */; };
 		1A6A38C21B862AF5009DF74D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C11B862AF5009DF74D /* main.m */; };
 		1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C41B862AF5009DF74D /* AppDelegate.m */; };
 		1A6A38CD1B862AF5009DF74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A38CC1B862AF5009DF74D /* Assets.xcassets */; };
@@ -108,6 +118,18 @@
 		1A4E58161B8FAD4100050267 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
 		1A4E58181B8FAD4900050267 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		1A4E581A1B8FAD4F00050267 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		1A4E58381B90560C00050267 /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		1A4E58391B90560C00050267 /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		1A4E583B1B9056B500050267 /* HotelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HotelModel.h; sourceTree = "<group>"; };
+		1A4E583C1B9056B500050267 /* HotelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HotelModel.m; sourceTree = "<group>"; };
+		1A4E583E1B90580300050267 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		1A4E58401B90583C00050267 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		1A4E58421B90585600050267 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1A4E58441B9058A400050267 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		1A4E58461B9058B100050267 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		1A4E58481B9058C000050267 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		1A4E584A1B9058CB00050267 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1A4E584C1B9058D200050267 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		1A6A38BD1B862AF5009DF74D /* TransitPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6A38C11B862AF5009DF74D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A6A38C31B862AF5009DF74D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,9 +164,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A4E584D1B9058D200050267 /* CoreText.framework in Frameworks */,
+				1A4E584B1B9058CB00050267 /* Social.framework in Frameworks */,
+				1A4E58491B9058C000050267 /* CoreTelephony.framework in Frameworks */,
+				1A4E58471B9058B100050267 /* CoreMotion.framework in Frameworks */,
+				1A4E58451B9058A400050267 /* SystemConfiguration.framework in Frameworks */,
+				1A4E58431B90585600050267 /* CoreData.framework in Frameworks */,
 				1A4E581B1B8FAD4F00050267 /* CoreLocation.framework in Frameworks */,
 				1A4E58191B8FAD4900050267 /* GLKit.framework in Frameworks */,
+				1A4E58411B90583C00050267 /* libc++.tbd in Frameworks */,
 				1A4E58171B8FAD4100050267 /* ImageIO.framework in Frameworks */,
+				1A4E583F1B90580300050267 /* LocalAuthentication.framework in Frameworks */,
 				1A4E58151B8FAD3600050267 /* libicucore.tbd in Frameworks */,
 				1A4E58131B8FAD2900050267 /* libz.tbd in Frameworks */,
 				1A4E58111B8FAD1D00050267 /* libxml2.tbd in Frameworks */,
@@ -214,6 +244,17 @@
 			path = "GoogleMaps-iOS-1.9.2";
 			sourceTree = "<group>";
 		};
+		1A4E58371B9055F900050267 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				1A4E58381B90560C00050267 /* DataManager.h */,
+				1A4E58391B90560C00050267 /* DataManager.m */,
+				1A4E583B1B9056B500050267 /* HotelModel.h */,
+				1A4E583C1B9056B500050267 /* HotelModel.m */,
+			);
+			name = DataManager;
+			sourceTree = "<group>";
+		};
 		1A6A38B41B862AF5009DF74D = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +278,7 @@
 		1A6A38BF1B862AF5009DF74D /* TransitPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				1A4E58371B9055F900050267 /* DataManager */,
 				1A4E57F51B8F976000050267 /* GoogleMaps-iOS-1.9.2 */,
 				1A4E57EC1B8F682500050267 /* Hotels */,
 				1A44C4E71B8CE89F00AB1F4F /* Fonts */,
@@ -269,6 +311,14 @@
 		1A6A38C01B862AF5009DF74D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1A4E584C1B9058D200050267 /* CoreText.framework */,
+				1A4E584A1B9058CB00050267 /* Social.framework */,
+				1A4E58481B9058C000050267 /* CoreTelephony.framework */,
+				1A4E58461B9058B100050267 /* CoreMotion.framework */,
+				1A4E58441B9058A400050267 /* SystemConfiguration.framework */,
+				1A4E58421B90585600050267 /* CoreData.framework */,
+				1A4E58401B90583C00050267 /* libc++.tbd */,
+				1A4E583E1B90580300050267 /* LocalAuthentication.framework */,
 				1A4E581A1B8FAD4F00050267 /* CoreLocation.framework */,
 				1A4E58181B8FAD4900050267 /* GLKit.framework */,
 				1A4E58161B8FAD4100050267 /* ImageIO.framework */,
@@ -455,9 +505,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A44C4E21B8CE5C300AB1F4F /* FlightSearchVC.m in Sources */,
+				1A4E583A1B90560C00050267 /* DataManager.m in Sources */,
 				1AADF85D1B8F20F900CDA0E3 /* AdvFlightSearch.m in Sources */,
 				1A4E57EF1B8F6EBC00050267 /* HotelCell.m in Sources */,
 				1AADF8581B8F06AF00CDA0E3 /* PackListing.m in Sources */,
+				1A4E583D1B9056B500050267 /* HotelModel.m in Sources */,
 				1A4E57F41B8F8C3B00050267 /* NIDropDown.m in Sources */,
 				1A4E57EA1B8F681E00050267 /* HotelList.m in Sources */,
 				1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */,

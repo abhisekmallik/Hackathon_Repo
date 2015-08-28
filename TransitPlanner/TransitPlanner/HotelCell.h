@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HotelModel.h"
 
 @interface HotelCell : UIView
 @property (weak, nonatomic) IBOutlet UIImageView *hotelImage;
@@ -15,5 +16,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *hotelRatings;
 @property (weak, nonatomic) IBOutlet UILabel *hotelPaxCount;
 @property (weak, nonatomic) IBOutlet UILabel *hotelRoomPrice;
+
+@property (strong, nonatomic) HotelModel *model;
 - (void)setupView;
 @end
