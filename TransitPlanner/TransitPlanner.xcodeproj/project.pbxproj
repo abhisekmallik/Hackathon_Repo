@@ -51,6 +51,10 @@
 		1A5FF83A1B90B55300146F6B /* WebDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF8381B90B55300146F6B /* WebDisplay.xib */; settings = {ASSET_TAGS = (); }; };
 		1A5FF83F1B90D5BE00146F6B /* ReviewItinerary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF83D1B90D5BD00146F6B /* ReviewItinerary.m */; settings = {ASSET_TAGS = (); }; };
 		1A5FF8401B90D5BE00146F6B /* ReviewItinerary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF83E1B90D5BE00146F6B /* ReviewItinerary.xib */; settings = {ASSET_TAGS = (); }; };
+		1A6374A71B91012600156849 /* ConfirmTransit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6374A51B91012600156849 /* ConfirmTransit.m */; settings = {ASSET_TAGS = (); }; };
+		1A6374A81B91012600156849 /* ConfirmTransit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6374A61B91012600156849 /* ConfirmTransit.xib */; settings = {ASSET_TAGS = (); }; };
+		1A6374AC1B910C5A00156849 /* CouponDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6374AA1B910C5A00156849 /* CouponDisplay.m */; settings = {ASSET_TAGS = (); }; };
+		1A6374AD1B910C5A00156849 /* CouponDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6374AB1B910C5A00156849 /* CouponDisplay.xib */; settings = {ASSET_TAGS = (); }; };
 		1A6A38C21B862AF5009DF74D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C11B862AF5009DF74D /* main.m */; };
 		1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C41B862AF5009DF74D /* AppDelegate.m */; };
 		1A6A38CD1B862AF5009DF74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A38CC1B862AF5009DF74D /* Assets.xcassets */; };
@@ -150,6 +154,12 @@
 		1A5FF83C1B90D5BD00146F6B /* ReviewItinerary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewItinerary.h; sourceTree = "<group>"; };
 		1A5FF83D1B90D5BD00146F6B /* ReviewItinerary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewItinerary.m; sourceTree = "<group>"; };
 		1A5FF83E1B90D5BE00146F6B /* ReviewItinerary.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewItinerary.xib; sourceTree = "<group>"; };
+		1A6374A41B91012600156849 /* ConfirmTransit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmTransit.h; sourceTree = "<group>"; };
+		1A6374A51B91012600156849 /* ConfirmTransit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmTransit.m; sourceTree = "<group>"; };
+		1A6374A61B91012600156849 /* ConfirmTransit.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConfirmTransit.xib; sourceTree = "<group>"; };
+		1A6374A91B910C5A00156849 /* CouponDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponDisplay.h; sourceTree = "<group>"; };
+		1A6374AA1B910C5A00156849 /* CouponDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponDisplay.m; sourceTree = "<group>"; };
+		1A6374AB1B910C5A00156849 /* CouponDisplay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponDisplay.xib; sourceTree = "<group>"; };
 		1A6A38BD1B862AF5009DF74D /* TransitPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6A38C11B862AF5009DF74D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A6A38C31B862AF5009DF74D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -375,6 +385,12 @@
 				1A5FF83C1B90D5BD00146F6B /* ReviewItinerary.h */,
 				1A5FF83D1B90D5BD00146F6B /* ReviewItinerary.m */,
 				1A5FF83E1B90D5BE00146F6B /* ReviewItinerary.xib */,
+				1A6374A41B91012600156849 /* ConfirmTransit.h */,
+				1A6374A51B91012600156849 /* ConfirmTransit.m */,
+				1A6374A61B91012600156849 /* ConfirmTransit.xib */,
+				1A6374A91B910C5A00156849 /* CouponDisplay.h */,
+				1A6374AA1B910C5A00156849 /* CouponDisplay.m */,
+				1A6374AB1B910C5A00156849 /* CouponDisplay.xib */,
 			);
 			path = TransitPlanner;
 			sourceTree = "<group>";
@@ -512,6 +528,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6374AD1B910C5A00156849 /* CouponDisplay.xib in Resources */,
 				1A44C4E31B8CE5C300AB1F4F /* FlightSearchVC.xib in Resources */,
 				1AADF8631B8F335500CDA0E3 /* BookingCont.xib in Resources */,
 				1A4E57F11B8F6F5000050267 /* HotelCell.xib in Resources */,
@@ -531,6 +548,7 @@
 				1A5FF8351B9091B100146F6B /* PackageDetailsViewController.xib in Resources */,
 				1AE8E33A1B8E2A1900CFC017 /* PackageOverview.xib in Resources */,
 				1A4E57F81B8F976000050267 /* CHANGELOG in Resources */,
+				1A6374A81B91012600156849 /* ConfirmTransit.xib in Resources */,
 				1A4E58551B9072D600050267 /* MapView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -556,10 +574,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A6374AC1B910C5A00156849 /* CouponDisplay.m in Sources */,
 				1A44C4E21B8CE5C300AB1F4F /* FlightSearchVC.m in Sources */,
 				1A4E583A1B90560C00050267 /* DataManager.m in Sources */,
 				1A5FF83F1B90D5BE00146F6B /* ReviewItinerary.m in Sources */,
 				1A5FF8341B9091B100146F6B /* PackageDetailsViewController.m in Sources */,
+				1A6374A71B91012600156849 /* ConfirmTransit.m in Sources */,
 				1AADF85D1B8F20F900CDA0E3 /* AdvFlightSearch.m in Sources */,
 				1A4E57EF1B8F6EBC00050267 /* HotelCell.m in Sources */,
 				1AADF8581B8F06AF00CDA0E3 /* PackListing.m in Sources */,
