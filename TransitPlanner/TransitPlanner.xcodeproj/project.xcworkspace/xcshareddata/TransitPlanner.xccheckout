@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>B99E87E6-DF4F-47C4-AB59-C49645E092D3</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>TransitPlanner</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>E1F8DB7E87E5ABC4168C261EA1570D24C80CB479</key>
 		<string>https://github.com/abhisekmallik/Hackathon_Repo.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>TransitPlanner/TransitPlanner.xcodeproj/project.xcworkspace</string>
+	<string>TransitPlanner/TransitPlanner.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>E1F8DB7E87E5ABC4168C261EA1570D24C80CB479</key>
