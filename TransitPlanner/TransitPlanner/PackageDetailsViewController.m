@@ -13,6 +13,7 @@
 @property (nonatomic, strong) IBOutlet UIImageView *imgBg1;
 @property (nonatomic, strong) IBOutlet UIImageView *imgBg2;
 @property (nonatomic, strong) IBOutlet UIImageView *imgBg;
+@property (nonatomic, assign) IBOutlet UILabel *lblPrice;
 @end
 
 @implementation PackageDetailsViewController
@@ -27,7 +28,20 @@
     self.imgBg2.image = [UIImage imageNamed:@"desert-safari-dubai-safari_in_dubai.jpg"];
     self.imgBg.image = [UIImage imageNamed:@"o-DUBAI-TIME-LAPSE-VIDEO-facebook.jpg"];
     
-    //[self.view sendSubviewToBack:self.imgBg1];
+    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:@"AED 3000"];
+    [attributeString addAttribute:NSStrikethroughStyleAttributeName
+                            value:@2
+                            range:NSMakeRange(0, [attributeString length])];
+    
+    self.lblPrice.attributedText = attributeString;
+    
+//    
+//    [attributeString addAttributes:@{NSStrikethroughStyleAttributeName: @(NSUnderlineStyleSingle)
+//                                      , NSStrikethroughColorAttributeName: [UIColor redColor]
+//                                     , NSBackgroundColorAttributeName: [UIColor yellowColor]}];
+//    
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
