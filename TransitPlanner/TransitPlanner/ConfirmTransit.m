@@ -8,6 +8,7 @@
 
 #import "ConfirmTransit.h"
 #import "CouponDisplay.h"
+#import "WASWhatsAppUtil.h"
 
 @interface ConfirmTransit ()
 - (IBAction)rewardsAction:(UIButton *)sender;
@@ -34,6 +35,17 @@
     _view2.layer.shadowOpacity = 0.35f;
     _view2.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
     _view2.layer.shadowRadius = 2.5f;
+    
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(leftTopBarButtonClickedAction:)];
+    
+    self.navigationController.topViewController.navigationItem.leftBarButtonItem = leftBtn;
+    
+}
+
+- (void)leftTopBarButtonClickedAction:(UIBarButtonItem *)button
+{
+    // Use Navigation Controller's category instead of view controller methods
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,15 +53,19 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (IBAction)btnShareDidSelect:(id)sender {
+    [[WASWhatsAppUtil getInstance] sendText:@"Pleae visit appstore link: https://itunes.apple.com/in/app/emirates/id714004391?mt=8 to install iPhone Emirates app and book Emirates transit package at discounted price."];
 }
-*/
+
+/*
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (IBAction)rewardsAction:(UIButton *)sender {
     CouponDisplay *display = [[CouponDisplay alloc] initWithNibName:@"CouponDisplay" bundle:nil];
