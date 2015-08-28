@@ -8,8 +8,9 @@
 
 #import "BookingCont.h"
 #import "HotelList.h"
+#import "DataManager.h"
 
-@interface BookingCont ()
+@interface BookingCont () <DataManagerDelegate>
 - (IBAction)transitBooking:(UIButton *)sender;
 
 @end
@@ -49,7 +50,44 @@
 */
 
 - (IBAction)transitBooking:(UIButton *)sender {
+    [self fetchHotelAPI];
+}
+
+- (void)fetchHotelAPI {
+    NSString *strUrl = @"https://transitplannermiddleware.mybluemix.net/crunchify/triplocationhotel/getLocationHotelsCustom.json";
+    
+    NSLog(@"Request Url : %@", strUrl);
+    
+    NSMutableURLRequest *request = [[NSMutableURLRequest alloc] initWithURL:[NSURL URLWithString:strUrl]];
+    [request setValue:@"application/json"   forHTTPHeaderField:@"Content-Type"];
+    [request addValue: @"Keep-Alive"        forHTTPHeaderField:@"Connection"];
+    [request setValue:[NSString stringWithFormat:@"0"] forHTTPHeaderField:@"Content-Length"];
+    [request setHTTPMethod:@"GET"];
+    [request setCachePolicy:NSURLRequestReloadIgnoringLocalAndRemoteCacheData];
+    [request setTimeoutInterval:30.0];
+    
+    NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * __nullable data, NSURLResponse * __nullable response, NSError * __nullable error) {
+        
+        NSDictionary *dictResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
+        NSLog(@"%@",dictResponse);
+        
+        DataManager *mgr = [DataManager sharedInstance];
+        mgr.delegate = self;
+        
+        [mgr parseHotelAPI:dictResponse];
+    }];
+    
+    [task resume];
+}
+
+- (void)parsingCompleted
+{
+    [self performSelectorOnMainThread:@selector(navigateToHotels) withObject:nil waitUntilDone:YES];
+}
+
+- (void)navigateToHotels {
     HotelList *list = [[HotelList alloc] initWithNibName:@"HotelList" bundle:nil];
     [self.navigationController pushViewController:list animated:YES];
 }
+
 @end

@@ -29,18 +29,30 @@
 */
 
 - (void)setupView {
+    
+    _hotelName.text = _model.name;
+    _hotelAddress.text = _model.address;
+    _hotelPaxCount.text = @"Adult: 1";
+    _hotelRoomPrice.text = @"AED 0";
+    
+    NSString *ratingImage = [NSString stringWithFormat:@"%@-MCID-%ld",_model.rating, [_model.rating integerValue]];
+    
+    _hotelRatings.image = [UIImage imageNamed:ratingImage];
+    
     _btnSelect.layer.borderWidth = 1;
     _btnSelect.layer.borderColor = [[UIColor blackColor] CGColor];
     _btnSelect.layer.cornerRadius = 5;
 }
 
 - (IBAction)selectAction:(UIButton *)sender {
-    NSArray * arr = [[NSArray alloc] init];
-    arr = [NSArray arrayWithObjects:@"Hello 0", @"Hello 1", @"Hello 2", @"Hello 3", @"Hello 4", @"Hello 5", @"Hello 6", @"Hello 7", @"Hello 8", @"Hello 9",nil];
-    NSArray * arrImage = [[NSArray alloc] init];
-    arrImage = [NSArray arrayWithObjects:[UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], nil];
+    
+    NSArray * arr = [_model.roomType allKeys];
+    
+//    arr = [NSArray arrayWithObjects:@"Hello 0", @"Hello 1", @"Hello 2", @"Hello 3", @"Hello 4", @"Hello 5", @"Hello 6", @"Hello 7", @"Hello 8", @"Hello 9",nil];
+//    NSArray * arrImage = [[NSArray alloc] init];
+//    arrImage = [NSArray arrayWithObjects:[UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], nil];
     if(_dropDown == nil) {
-        CGFloat f = 100;
+        CGFloat f = 120;
         _dropDown = [[NIDropDown alloc] showDropDownButton:sender height:&f titleArray:arr imageArray:nil direction:@"up"];
 //        _dropDown = [[NIDropDown alloc]showDropDown:sender :&f :arr :arrImage :@"down"];
         _dropDown.delegate = self;

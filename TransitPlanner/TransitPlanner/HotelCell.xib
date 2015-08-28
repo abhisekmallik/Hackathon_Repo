@@ -17,13 +17,14 @@
             <string>EmiratesSM</string>
             <string>EmiratesSM</string>
             <string>EmiratesSM</string>
+            <string>EmiratesSM</string>
         </mutableArray>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HotelCell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="227"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="269"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
             <subviews>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="cEu-7c-PC0">
@@ -117,6 +118,16 @@
                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1wY-bK-Chb">
+                    <rect key="frame" x="12" y="228" width="293" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.84313725490000002" green="0.098039215690000001" blue="0.12941176469999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <fontDescription key="fontDescription" name="EmiratesSM" family="Emirates SM" pointSize="15"/>
+                    <state key="normal" title="Button">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -134,7 +145,7 @@
                 <outlet property="hotelRoomPrice" destination="wP7-Ml-c95" id="dpQ-DH-j10"/>
                 <outlet property="txtRoomCount" destination="B9z-mv-7SF" id="nAn-a1-DRf"/>
             </connections>
-            <point key="canvasLocation" x="-115" y="27.5"/>
+            <point key="canvasLocation" x="154" y="88.5"/>
         </view>
     </objects>
     <resources>
