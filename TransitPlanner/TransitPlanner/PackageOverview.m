@@ -42,7 +42,14 @@
 - (void)leftTopBarButtonClickedAction:(UIBarButtonItem *)button
 {
     // Use Navigation Controller's category instead of view controller methods
+    //[self.navigationController popViewControllerAnimated:YES];
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration: 1.0];
+    [UIView setAnimationCurve: UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromRight forView: self.navigationController.view cache: NO];
     [self.navigationController popViewControllerAnimated:YES];
+    [UIView commitAnimations];
 }
 
 /*

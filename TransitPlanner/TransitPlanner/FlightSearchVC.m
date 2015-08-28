@@ -43,8 +43,13 @@
 
 - (IBAction)infoAction:(UIButton *)sender {
    PackageOverview *overview = [[PackageOverview alloc] initWithNibName:@"PackageOverview" bundle:nil];
-    [self.navigationController pushViewController:overview animated:YES];
-    
+    //[self.navigationController pushViewController:overview animated:YES];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration: 1.0];
+    [UIView setAnimationCurve: UIViewAnimationCurveEaseInOut];
+    [UIView setAnimationTransition: UIViewAnimationTransitionFlipFromLeft forView: self.navigationController.view cache: NO];
+    [self.navigationController pushViewController: overview animated: YES];
+    [UIView commitAnimations];
     
 
     
