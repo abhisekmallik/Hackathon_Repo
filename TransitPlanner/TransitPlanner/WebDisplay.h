@@ -10,6 +10,6 @@
 
 @interface WebDisplay : UIViewController
 
-@property ()
+//@property ()
 
 @end
