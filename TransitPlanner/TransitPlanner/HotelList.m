@@ -42,10 +42,10 @@
         
         [_baseScrollview addSubview:cell];
         
-        y += 227 + 5.0f;
+        y += 227 + 10.0f;
     }
     
-    _baseScrollview.contentSize = CGSizeMake(321, 20 * (227 + 5));
+    _baseScrollview.contentSize = CGSizeMake(321, 20 * (227 + 10));
 }
 
 - (void)didReceiveMemoryWarning {
