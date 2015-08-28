@@ -54,7 +54,7 @@
 //    NSArray * arrImage = [[NSArray alloc] init];
 //    arrImage = [NSArray arrayWithObjects:[UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], [UIImage imageNamed:@"apple.png"], [UIImage imageNamed:@"apple2.png"], nil];
     if(_dropDown == nil) {
-        CGFloat f = 120;
+        CGFloat f = 80;
         _dropDown = [[NIDropDown alloc] showDropDownButton:sender height:&f titleArray:arr imageArray:nil direction:@"up"];
 //        _dropDown = [[NIDropDown alloc]showDropDown:sender :&f :arr :arrImage :@"down"];
         _dropDown.delegate = self;

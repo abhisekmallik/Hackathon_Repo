@@ -22,7 +22,10 @@
 @implementation HotelList
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
+    
+    self.navigationItem.hidesBackButton = YES;
+    self.navigationItem.leftBarButtonItems = nil;
+    
     // Do any additional setup after loading the view from its nib.
     DataManager *mgr = [DataManager sharedInstance];
     NSInteger height = 296;
@@ -35,7 +38,8 @@
         HotelCell * cell = [xib firstObject];
         cell.model = model;
         cell.delegate = self;
-        [cell setupView];
+        [cell setupView];    [super viewDidLoad];
+
         
         CGRect rect = cell.frame;
         rect.size.height = height;
