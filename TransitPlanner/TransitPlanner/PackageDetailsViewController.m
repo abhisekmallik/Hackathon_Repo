@@ -1,29 +1,33 @@
 //
-//  FlightSearchVC.m
+//  PackageDetailsViewController.m
 //  TransitPlanner
 //
-//  Created by Abhisek Mallik on 25/08/15.
+//  Created by Abhishek Verma on 8/28/15.
 //  Copyright (c) 2015 Emirates. All rights reserved.
 //
 
-#import "FlightSearchVC.h"
-#import "PackageOverview.h"
 #import "PackageDetailsViewController.h"
 
-@interface FlightSearchVC ()
-- (IBAction)infoAction:(UIButton *)sender;
-
+@interface PackageDetailsViewController ()
+@property (nonatomic, strong) IBOutlet UIScrollView *scrl;
+@property (nonatomic, strong) IBOutlet UIImageView *imgBg1;
+@property (nonatomic, strong) IBOutlet UIImageView *imgBg2;
+@property (nonatomic, strong) IBOutlet UIImageView *imgBg;
 @end
 
-@implementation FlightSearchVC
+@implementation PackageDetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    self.title = @"Search Result";
     
+    self.title = @"Package Details";
     
+    self.imgBg1.image = [UIImage imageNamed:@"dubai HOHO rs (960 x 356).jpg"];
+    self.imgBg2.image = [UIImage imageNamed:@"desert-safari-dubai-safari_in_dubai.jpg"];
+    self.imgBg.image = [UIImage imageNamed:@"o-DUBAI-TIME-LAPSE-VIDEO-facebook.jpg"];
     
+    //[self.view sendSubviewToBack:self.imgBg1];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -41,13 +45,4 @@
 }
 */
 
-- (IBAction)infoAction:(UIButton *)sender {
-   // PackageOverview *overview = [[PackageOverview alloc] initWithNibName:@"PackageOverview" bundle:nil];
-    //[self.navigationController pushViewController:overview animated:YES];
-    
-    PackageDetailsViewController *packageDetails = [[PackageDetailsViewController alloc] initWithNibName:@"PackageDetailsViewController" bundle:nil];
-    [self.navigationController pushViewController:packageDetails animated:YES];
-
-    
-}
 @end
