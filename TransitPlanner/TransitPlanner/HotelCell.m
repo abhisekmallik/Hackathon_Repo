@@ -15,6 +15,8 @@
 - (IBAction)stepperAction:(UIStepper *)sender;
 @property (weak, nonatomic) IBOutlet UITextField *txtRoomCount;
 @property (nonatomic, strong) NIDropDown *dropDown;
+- (IBAction)hotelSelectAction:(UIButton *)sender;
+- (IBAction)mapInvokeAction:(UIButton *)sender;
 
 @end
 
@@ -63,13 +65,30 @@
     }
 }
 
-- (void) niDropDownDelegateMethod: (NIDropDown *) sender {
+- (void) niDropDownDelegateMethod: (NIDropDown *) sender SelectedItem:(NSString *)item {
     _dropDown = nil;
+    _model.selectedPrice = [_model.roomType objectForKey:item];
+    _hotelRoomPrice.text = [NSString stringWithFormat:@"AED %@",_model.selectedPrice];
 }
 
 - (IBAction)stepperAction:(UIStepper *)sender {
 //    NSInteger count = [_txtRoomCount.text integerValue];
 //    count += sender.value;
     _txtRoomCount.text = [NSString stringWithFormat:@"%d",(int)sender.value];
+}
+- (IBAction)hotelSelectAction:(UIButton *)sender {
+    if (_delegate) {
+        if ([_delegate respondsToSelector:@selector(selectHotel:withPrice:)]) {
+            [_delegate selectHotel:_model withPrice:_model.selectedPrice];
+        }
+    }
+}
+
+- (IBAction)mapInvokeAction:(UIButton *)sender {
+    if (_delegate) {
+        if ([_delegate respondsToSelector:@selector(invokeMapForHotel:)]) {
+            [_delegate invokeMapForHotel:_model];
+        }
+    }
 }
 @end

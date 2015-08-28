@@ -13,14 +13,14 @@
 		1A44C4EB1B8CE8B700AB1F4F /* Emirates SB.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A44C4E81B8CE8B700AB1F4F /* Emirates SB.otf */; };
 		1A44C4EC1B8CE8B700AB1F4F /* Emirates SL.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A44C4E91B8CE8B700AB1F4F /* Emirates SL.otf */; };
 		1A44C4ED1B8CE8B700AB1F4F /* Emirates SM.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1A44C4EA1B8CE8B700AB1F4F /* Emirates SM.otf */; };
-		1A4E57EA1B8F681E00050267 /* HotelList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E57E81B8F681E00050267 /* HotelList.m */; settings = {ASSET_TAGS = (); }; };
-		1A4E57EB1B8F681E00050267 /* HotelList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E57E91B8F681E00050267 /* HotelList.xib */; settings = {ASSET_TAGS = (); }; };
-		1A4E57EF1B8F6EBC00050267 /* HotelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E57EE1B8F6EBC00050267 /* HotelCell.m */; settings = {ASSET_TAGS = (); }; };
-		1A4E57F11B8F6F5000050267 /* HotelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E57F01B8F6F5000050267 /* HotelCell.xib */; settings = {ASSET_TAGS = (); }; };
-		1A4E57F41B8F8C3B00050267 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E57F31B8F8C3B00050267 /* NIDropDown.m */; settings = {ASSET_TAGS = (); }; };
-		1A4E57F81B8F976000050267 /* CHANGELOG in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E57F61B8F976000050267 /* CHANGELOG */; settings = {ASSET_TAGS = (); }; };
-		1A4E57F91B8F976000050267 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E57F71B8F976000050267 /* GoogleMaps.framework */; settings = {ASSET_TAGS = (); }; };
-		1A4E57FB1B8FA49500050267 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E57FA1B8FA49500050267 /* GoogleMaps.bundle */; settings = {ASSET_TAGS = (); }; };
+		1A4E57EA1B8F681E00050267 /* HotelList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E57E81B8F681E00050267 /* HotelList.m */; };
+		1A4E57EB1B8F681E00050267 /* HotelList.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E57E91B8F681E00050267 /* HotelList.xib */; };
+		1A4E57EF1B8F6EBC00050267 /* HotelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E57EE1B8F6EBC00050267 /* HotelCell.m */; };
+		1A4E57F11B8F6F5000050267 /* HotelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E57F01B8F6F5000050267 /* HotelCell.xib */; };
+		1A4E57F41B8F8C3B00050267 /* NIDropDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E57F31B8F8C3B00050267 /* NIDropDown.m */; };
+		1A4E57F81B8F976000050267 /* CHANGELOG in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E57F61B8F976000050267 /* CHANGELOG */; };
+		1A4E57F91B8F976000050267 /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E57F71B8F976000050267 /* GoogleMaps.framework */; };
+		1A4E57FB1B8FA49500050267 /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E57FA1B8FA49500050267 /* GoogleMaps.bundle */; };
 		1A4E57FD1B8FACBB00050267 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E57FC1B8FACBB00050267 /* QuartzCore.framework */; };
 		1A4E57FF1B8FACC500050267 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E57FE1B8FACC500050267 /* UIKit.framework */; };
 		1A4E58011B8FACCC00050267 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58001B8FACCC00050267 /* Security.framework */; };
@@ -31,35 +31,39 @@
 		1A4E580B1B8FACF300050267 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E580A1B8FACF300050267 /* CoreGraphics.framework */; };
 		1A4E580D1B8FACFC00050267 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E580C1B8FACFC00050267 /* AudioToolbox.framework */; };
 		1A4E580F1B8FAD0200050267 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E580E1B8FAD0200050267 /* AVFoundation.framework */; };
-		1A4E58111B8FAD1D00050267 /* libxml2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58101B8FAD1D00050267 /* libxml2.tbd */; };
-		1A4E58131B8FAD2900050267 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58121B8FAD2900050267 /* libz.tbd */; };
-		1A4E58151B8FAD3600050267 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58141B8FAD3600050267 /* libicucore.tbd */; };
 		1A4E58171B8FAD4100050267 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58161B8FAD4100050267 /* ImageIO.framework */; };
 		1A4E58191B8FAD4900050267 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58181B8FAD4900050267 /* GLKit.framework */; };
 		1A4E581B1B8FAD4F00050267 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E581A1B8FAD4F00050267 /* CoreLocation.framework */; };
-		1A4E583A1B90560C00050267 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E58391B90560C00050267 /* DataManager.m */; settings = {ASSET_TAGS = (); }; };
-		1A4E583D1B9056B500050267 /* HotelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E583C1B9056B500050267 /* HotelModel.m */; settings = {ASSET_TAGS = (); }; };
+		1A4E583A1B90560C00050267 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E58391B90560C00050267 /* DataManager.m */; };
+		1A4E583D1B9056B500050267 /* HotelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E583C1B9056B500050267 /* HotelModel.m */; };
 		1A4E583F1B90580300050267 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E583E1B90580300050267 /* LocalAuthentication.framework */; };
-		1A4E58411B90583C00050267 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58401B90583C00050267 /* libc++.tbd */; };
 		1A4E58431B90585600050267 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58421B90585600050267 /* CoreData.framework */; };
 		1A4E58451B9058A400050267 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58441B9058A400050267 /* SystemConfiguration.framework */; };
 		1A4E58471B9058B100050267 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58461B9058B100050267 /* CoreMotion.framework */; };
 		1A4E58491B9058C000050267 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E58481B9058C000050267 /* CoreTelephony.framework */; };
 		1A4E584B1B9058CB00050267 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E584A1B9058CB00050267 /* Social.framework */; };
 		1A4E584D1B9058D200050267 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E584C1B9058D200050267 /* CoreText.framework */; };
+		1A4E58541B9072D600050267 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E58521B9072D600050267 /* MapView.m */; };
+		1A4E58551B9072D600050267 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E58531B9072D600050267 /* MapView.xib */; };
+		1A5FF8341B9091B100146F6B /* PackageDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF8321B9091B100146F6B /* PackageDetailsViewController.m */; settings = {ASSET_TAGS = (); }; };
+		1A5FF8351B9091B100146F6B /* PackageDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF8331B9091B100146F6B /* PackageDetailsViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		1A6A38C21B862AF5009DF74D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C11B862AF5009DF74D /* main.m */; };
 		1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C41B862AF5009DF74D /* AppDelegate.m */; };
 		1A6A38CD1B862AF5009DF74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A38CC1B862AF5009DF74D /* Assets.xcassets */; };
 		1A6A38DB1B862AF5009DF74D /* TransitPlannerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38DA1B862AF5009DF74D /* TransitPlannerTests.m */; };
 		1A6A38E61B862AF5009DF74D /* TransitPlannerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38E51B862AF5009DF74D /* TransitPlannerUITests.m */; };
-		1AADF8521B8EE89B00CDA0E3 /* Tours.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8511B8EE89B00CDA0E3 /* Tours.plist */; settings = {ASSET_TAGS = (); }; };
-		1AADF8541B8F013D00CDA0E3 /* DubaiCal.html in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8531B8F013D00CDA0E3 /* DubaiCal.html */; settings = {ASSET_TAGS = (); }; };
-		1AADF8581B8F06AF00CDA0E3 /* PackListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AADF8561B8F06AF00CDA0E3 /* PackListing.m */; settings = {ASSET_TAGS = (); }; };
-		1AADF8591B8F06AF00CDA0E3 /* PackListing.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8571B8F06AF00CDA0E3 /* PackListing.xib */; settings = {ASSET_TAGS = (); }; };
-		1AADF85D1B8F20F900CDA0E3 /* AdvFlightSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AADF85B1B8F20F900CDA0E3 /* AdvFlightSearch.m */; settings = {ASSET_TAGS = (); }; };
-		1AADF85E1B8F20F900CDA0E3 /* AdvFlightSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF85C1B8F20F900CDA0E3 /* AdvFlightSearch.xib */; settings = {ASSET_TAGS = (); }; };
-		1AADF8621B8F335500CDA0E3 /* BookingCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AADF8601B8F335500CDA0E3 /* BookingCont.m */; settings = {ASSET_TAGS = (); }; };
-		1AADF8631B8F335500CDA0E3 /* BookingCont.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8611B8F335500CDA0E3 /* BookingCont.xib */; settings = {ASSET_TAGS = (); }; };
+		1A7EB4561B9084CD00B3EC73 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7EB4551B9084CD00B3EC73 /* libxml2.dylib */; };
+		1A7EB4581B9084D800B3EC73 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7EB4571B9084D800B3EC73 /* libz.dylib */; };
+		1A7EB45A1B9084E300B3EC73 /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7EB4591B9084E300B3EC73 /* libicucore.dylib */; };
+		1A7EB45C1B9084F500B3EC73 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A7EB45B1B9084F500B3EC73 /* libc++.dylib */; };
+		1AADF8521B8EE89B00CDA0E3 /* Tours.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8511B8EE89B00CDA0E3 /* Tours.plist */; };
+		1AADF8541B8F013D00CDA0E3 /* DubaiCal.html in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8531B8F013D00CDA0E3 /* DubaiCal.html */; };
+		1AADF8581B8F06AF00CDA0E3 /* PackListing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AADF8561B8F06AF00CDA0E3 /* PackListing.m */; };
+		1AADF8591B8F06AF00CDA0E3 /* PackListing.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8571B8F06AF00CDA0E3 /* PackListing.xib */; };
+		1AADF85D1B8F20F900CDA0E3 /* AdvFlightSearch.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AADF85B1B8F20F900CDA0E3 /* AdvFlightSearch.m */; };
+		1AADF85E1B8F20F900CDA0E3 /* AdvFlightSearch.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF85C1B8F20F900CDA0E3 /* AdvFlightSearch.xib */; };
+		1AADF8621B8F335500CDA0E3 /* BookingCont.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AADF8601B8F335500CDA0E3 /* BookingCont.m */; };
+		1AADF8631B8F335500CDA0E3 /* BookingCont.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AADF8611B8F335500CDA0E3 /* BookingCont.xib */; };
 		1AE8E3351B8E292900CFC017 /* final_brochure_25sept2014_v2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8E3341B8E292900CFC017 /* final_brochure_25sept2014_v2.pdf */; };
 		1AE8E3391B8E2A1900CFC017 /* PackageOverview.m in Sources */ = {isa = PBXBuildFile; fileRef = 1AE8E3371B8E2A1900CFC017 /* PackageOverview.m */; };
 		1AE8E33A1B8E2A1900CFC017 /* PackageOverview.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1AE8E3381B8E2A1900CFC017 /* PackageOverview.xib */; };
@@ -130,6 +134,12 @@
 		1A4E58481B9058C000050267 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		1A4E584A1B9058CB00050267 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1A4E584C1B9058D200050267 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		1A4E58511B9072D600050267 /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		1A4E58521B9072D600050267 /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		1A4E58531B9072D600050267 /* MapView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapView.xib; sourceTree = "<group>"; };
+		1A5FF8311B9091B100146F6B /* PackageDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageDetailsViewController.h; sourceTree = "<group>"; };
+		1A5FF8321B9091B100146F6B /* PackageDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageDetailsViewController.m; sourceTree = "<group>"; };
+		1A5FF8331B9091B100146F6B /* PackageDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PackageDetailsViewController.xib; sourceTree = "<group>"; };
 		1A6A38BD1B862AF5009DF74D /* TransitPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6A38C11B862AF5009DF74D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A6A38C31B862AF5009DF74D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -142,6 +152,10 @@
 		1A6A38E11B862AF5009DF74D /* TransitPlannerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransitPlannerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6A38E51B862AF5009DF74D /* TransitPlannerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitPlannerUITests.m; sourceTree = "<group>"; };
 		1A6A38E71B862AF5009DF74D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A7EB4551B9084CD00B3EC73 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		1A7EB4571B9084D800B3EC73 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1A7EB4591B9084E300B3EC73 /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		1A7EB45B1B9084F500B3EC73 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		1AADF8511B8EE89B00CDA0E3 /* Tours.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Tours.plist; sourceTree = "<group>"; };
 		1AADF8531B8F013D00CDA0E3 /* DubaiCal.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = DubaiCal.html; sourceTree = "<group>"; };
 		1AADF8551B8F06AF00CDA0E3 /* PackListing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackListing.h; sourceTree = "<group>"; };
@@ -164,6 +178,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A7EB45C1B9084F500B3EC73 /* libc++.dylib in Frameworks */,
+				1A7EB45A1B9084E300B3EC73 /* libicucore.dylib in Frameworks */,
+				1A7EB4581B9084D800B3EC73 /* libz.dylib in Frameworks */,
+				1A7EB4561B9084CD00B3EC73 /* libxml2.dylib in Frameworks */,
 				1A4E584D1B9058D200050267 /* CoreText.framework in Frameworks */,
 				1A4E584B1B9058CB00050267 /* Social.framework in Frameworks */,
 				1A4E58491B9058C000050267 /* CoreTelephony.framework in Frameworks */,
@@ -172,12 +190,8 @@
 				1A4E58431B90585600050267 /* CoreData.framework in Frameworks */,
 				1A4E581B1B8FAD4F00050267 /* CoreLocation.framework in Frameworks */,
 				1A4E58191B8FAD4900050267 /* GLKit.framework in Frameworks */,
-				1A4E58411B90583C00050267 /* libc++.tbd in Frameworks */,
 				1A4E58171B8FAD4100050267 /* ImageIO.framework in Frameworks */,
 				1A4E583F1B90580300050267 /* LocalAuthentication.framework in Frameworks */,
-				1A4E58151B8FAD3600050267 /* libicucore.tbd in Frameworks */,
-				1A4E58131B8FAD2900050267 /* libz.tbd in Frameworks */,
-				1A4E58111B8FAD1D00050267 /* libxml2.tbd in Frameworks */,
 				1A4E580F1B8FAD0200050267 /* AVFoundation.framework in Frameworks */,
 				1A4E580D1B8FACFC00050267 /* AudioToolbox.framework in Frameworks */,
 				1A4E580B1B8FACF300050267 /* CoreGraphics.framework in Frameworks */,
@@ -230,6 +244,9 @@
 				1A4E57ED1B8F6EBC00050267 /* HotelCell.h */,
 				1A4E57EE1B8F6EBC00050267 /* HotelCell.m */,
 				1A4E57F01B8F6F5000050267 /* HotelCell.xib */,
+				1A4E58511B9072D600050267 /* MapView.h */,
+				1A4E58521B9072D600050267 /* MapView.m */,
+				1A4E58531B9072D600050267 /* MapView.xib */,
 			);
 			name = Hotels;
 			sourceTree = "<group>";
@@ -258,6 +275,10 @@
 		1A6A38B41B862AF5009DF74D = {
 			isa = PBXGroup;
 			children = (
+				1A7EB45B1B9084F500B3EC73 /* libc++.dylib */,
+				1A7EB4591B9084E300B3EC73 /* libicucore.dylib */,
+				1A7EB4571B9084D800B3EC73 /* libz.dylib */,
+				1A7EB4551B9084CD00B3EC73 /* libxml2.dylib */,
 				1A6A38BF1B862AF5009DF74D /* TransitPlanner */,
 				1A6A38D91B862AF5009DF74D /* TransitPlannerTests */,
 				1A6A38E41B862AF5009DF74D /* TransitPlannerUITests */,
@@ -304,6 +325,9 @@
 				1AADF85F1B8F335500CDA0E3 /* BookingCont.h */,
 				1AADF8601B8F335500CDA0E3 /* BookingCont.m */,
 				1AADF8611B8F335500CDA0E3 /* BookingCont.xib */,
+				1A5FF8311B9091B100146F6B /* PackageDetailsViewController.h */,
+				1A5FF8321B9091B100146F6B /* PackageDetailsViewController.m */,
+				1A5FF8331B9091B100146F6B /* PackageDetailsViewController.xib */,
 			);
 			path = TransitPlanner;
 			sourceTree = "<group>";
@@ -478,8 +502,10 @@
 				1AADF8591B8F06AF00CDA0E3 /* PackListing.xib in Resources */,
 				1A4E57EB1B8F681E00050267 /* HotelList.xib in Resources */,
 				1AADF8541B8F013D00CDA0E3 /* DubaiCal.html in Resources */,
+				1A5FF8351B9091B100146F6B /* PackageDetailsViewController.xib in Resources */,
 				1AE8E33A1B8E2A1900CFC017 /* PackageOverview.xib in Resources */,
 				1A4E57F81B8F976000050267 /* CHANGELOG in Resources */,
+				1A4E58551B9072D600050267 /* MapView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -506,6 +532,7 @@
 			files = (
 				1A44C4E21B8CE5C300AB1F4F /* FlightSearchVC.m in Sources */,
 				1A4E583A1B90560C00050267 /* DataManager.m in Sources */,
+				1A5FF8341B9091B100146F6B /* PackageDetailsViewController.m in Sources */,
 				1AADF85D1B8F20F900CDA0E3 /* AdvFlightSearch.m in Sources */,
 				1A4E57EF1B8F6EBC00050267 /* HotelCell.m in Sources */,
 				1AADF8581B8F06AF00CDA0E3 /* PackListing.m in Sources */,
@@ -515,6 +542,7 @@
 				1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */,
 				1A44C4E61B8CE79E00AB1F4F /* UIColor+CustomColors.m in Sources */,
 				1AADF8621B8F335500CDA0E3 /* BookingCont.m in Sources */,
+				1A4E58541B9072D600050267 /* MapView.m in Sources */,
 				1AE8E3391B8E2A1900CFC017 /* PackageOverview.m in Sources */,
 				1A6A38C21B862AF5009DF74D /* main.m in Sources */,
 			);
@@ -643,6 +671,7 @@
 				INFOPLIST_FILE = TransitPlanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.hackathon.TransitPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -660,6 +689,7 @@
 				INFOPLIST_FILE = TransitPlanner/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.hackathon.TransitPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;

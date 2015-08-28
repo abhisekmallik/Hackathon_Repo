@@ -11,8 +11,10 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import "DataManager.h"
 #import "HotelModel.h"
+#import "MapView.h"
+#import "PackageDetailsViewController.h"
 
-@interface HotelList ()
+@interface HotelList () <HotelCellDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *baseScrollview;
 
 @end
@@ -23,7 +25,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     DataManager *mgr = [DataManager sharedInstance];
-    
+    NSInteger height = 296;
+    NSInteger gap = 10.0f;
     
     CGFloat y = 0.0f;
     for (HotelModel *model in mgr.arrHotels) {
@@ -31,11 +34,11 @@
         NSArray *xib = [[NSBundle mainBundle] loadNibNamed:@"HotelCell" owner:self options:nil];
         HotelCell * cell = [xib firstObject];
         cell.model = model;
-
+        cell.delegate = self;
         [cell setupView];
         
         CGRect rect = cell.frame;
-        rect.size.height = 227;
+        rect.size.height = height;
         rect.origin = CGPointMake(0, y);
         cell.frame = rect;
         
@@ -47,10 +50,10 @@
         
         [_baseScrollview addSubview:cell];
         
-        y += 227 + 10.0f;
+        y += height + gap;
     }
     
-    _baseScrollview.contentSize = CGSizeMake(321, 20 * (227 + 10));
+    _baseScrollview.contentSize = CGSizeMake(320, [mgr.arrHotels count] * (height + gap));
 }
 
 - (void)didReceiveMemoryWarning {
@@ -69,21 +72,20 @@
 */
 
 
-- (void)initializeGoogleMap
-{
-    static dispatch_once_t pred = 0;\
-    dispatch_once(&pred, ^{
-        [GMSServices provideAPIKey:@"AIzaSyBiIw4eigxImLmP7uutjV3rtV2GSNq0n2k"];
+
+
+
+#pragma mark - HotelCellDelegate
+- (void)invokeMapForHotel:(HotelModel *)model {
         
-        GMSServices *gmsServices = [GMSServices sharedServices];
-        
-        NSLog(@"Google Map SDK Version: %@", [GMSServices SDKVersion]);
-        
-        // Log the required open source licenses!  Yes, just NSLog-ing them is not
-        // enough but is good for a demo.
-        NSLog(@"Open source licenses:\n%@", [GMSServices openSourceLicenseInfo]);
-    });
-    
+    MapView *map = [[MapView alloc] initWithNibName:@"MapView" bundle:nil];
+    map.model = model;
+    [self.navigationController pushViewController:map animated:YES];
+}
+
+- (void)selectHotel:(HotelModel *)model withPrice:(NSString *)price {
+    PackageDetailsViewController *packageDetails = [[PackageDetailsViewController alloc] initWithNibName:@"PackageDetailsViewController" bundle:nil];
+    [self.navigationController pushViewController:packageDetails animated:YES];
 }
 
 @end
