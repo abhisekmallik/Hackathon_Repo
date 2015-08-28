@@ -42,11 +42,10 @@
 */
 
 - (IBAction)infoAction:(UIButton *)sender {
-   // PackageOverview *overview = [[PackageOverview alloc] initWithNibName:@"PackageOverview" bundle:nil];
-    //[self.navigationController pushViewController:overview animated:YES];
+   PackageOverview *overview = [[PackageOverview alloc] initWithNibName:@"PackageOverview" bundle:nil];
+    [self.navigationController pushViewController:overview animated:YES];
     
-    PackageDetailsViewController *packageDetails = [[PackageDetailsViewController alloc] initWithNibName:@"PackageDetailsViewController" bundle:nil];
-    [self.navigationController pushViewController:packageDetails animated:YES];
+    
 
     
 }

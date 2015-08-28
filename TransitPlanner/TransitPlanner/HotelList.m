@@ -12,6 +12,7 @@
 #import "DataManager.h"
 #import "HotelModel.h"
 #import "MapView.h"
+#import "PackageDetailsViewController.h"
 
 @interface HotelList () <HotelCellDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *baseScrollview;
@@ -83,7 +84,8 @@
 }
 
 - (void)selectHotel:(HotelModel *)model withPrice:(NSString *)price {
-    
+    PackageDetailsViewController *packageDetails = [[PackageDetailsViewController alloc] initWithNibName:@"PackageDetailsViewController" bundle:nil];
+    [self.navigationController pushViewController:packageDetails animated:YES];
 }
 
 @end
