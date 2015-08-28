@@ -11,8 +11,9 @@
 
 @interface PackageOverview () <UIWebViewDelegate>
 
-@property (nonatomic, weak) IBOutlet UIWebView *webView;
 - (IBAction)packageInfo:(UIButton *)sender;
+- (IBAction)dubaiCalendar:(UIButton *)sender;
+- (IBAction)stopoverInfo:(UIButton *)sender;
 
 @end
 
@@ -59,5 +60,11 @@
 - (IBAction)packageInfo:(UIButton *)sender {
     PackListing *list = [[PackListing alloc] initWithNibName:@"PackListing" bundle:nil];
     [self.navigationController pushViewController:list animated:YES];
+}
+
+- (IBAction)dubaiCalendar:(UIButton *)sender {
+}
+
+- (IBAction)stopoverInfo:(UIButton *)sender {
 }
 @end

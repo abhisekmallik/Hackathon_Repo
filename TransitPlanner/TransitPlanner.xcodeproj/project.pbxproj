@@ -47,6 +47,8 @@
 		1A4E58551B9072D600050267 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E58531B9072D600050267 /* MapView.xib */; };
 		1A5FF8341B9091B100146F6B /* PackageDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF8321B9091B100146F6B /* PackageDetailsViewController.m */; settings = {ASSET_TAGS = (); }; };
 		1A5FF8351B9091B100146F6B /* PackageDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF8331B9091B100146F6B /* PackageDetailsViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		1A5FF8391B90B55300146F6B /* WebDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF8371B90B55300146F6B /* WebDisplay.m */; settings = {ASSET_TAGS = (); }; };
+		1A5FF83A1B90B55300146F6B /* WebDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF8381B90B55300146F6B /* WebDisplay.xib */; settings = {ASSET_TAGS = (); }; };
 		1A6A38C21B862AF5009DF74D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C11B862AF5009DF74D /* main.m */; };
 		1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C41B862AF5009DF74D /* AppDelegate.m */; };
 		1A6A38CD1B862AF5009DF74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A38CC1B862AF5009DF74D /* Assets.xcassets */; };
@@ -140,6 +142,9 @@
 		1A5FF8311B9091B100146F6B /* PackageDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PackageDetailsViewController.h; sourceTree = "<group>"; };
 		1A5FF8321B9091B100146F6B /* PackageDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PackageDetailsViewController.m; sourceTree = "<group>"; };
 		1A5FF8331B9091B100146F6B /* PackageDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PackageDetailsViewController.xib; sourceTree = "<group>"; };
+		1A5FF8361B90B55300146F6B /* WebDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebDisplay.h; sourceTree = "<group>"; };
+		1A5FF8371B90B55300146F6B /* WebDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebDisplay.m; sourceTree = "<group>"; };
+		1A5FF8381B90B55300146F6B /* WebDisplay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebDisplay.xib; sourceTree = "<group>"; };
 		1A6A38BD1B862AF5009DF74D /* TransitPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6A38C11B862AF5009DF74D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A6A38C31B862AF5009DF74D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -328,6 +333,9 @@
 				1A5FF8311B9091B100146F6B /* PackageDetailsViewController.h */,
 				1A5FF8321B9091B100146F6B /* PackageDetailsViewController.m */,
 				1A5FF8331B9091B100146F6B /* PackageDetailsViewController.xib */,
+				1A5FF8361B90B55300146F6B /* WebDisplay.h */,
+				1A5FF8371B90B55300146F6B /* WebDisplay.m */,
+				1A5FF8381B90B55300146F6B /* WebDisplay.xib */,
 			);
 			path = TransitPlanner;
 			sourceTree = "<group>";
@@ -500,6 +508,7 @@
 				1A44C4EC1B8CE8B700AB1F4F /* Emirates SL.otf in Resources */,
 				1AADF85E1B8F20F900CDA0E3 /* AdvFlightSearch.xib in Resources */,
 				1AADF8591B8F06AF00CDA0E3 /* PackListing.xib in Resources */,
+				1A5FF83A1B90B55300146F6B /* WebDisplay.xib in Resources */,
 				1A4E57EB1B8F681E00050267 /* HotelList.xib in Resources */,
 				1AADF8541B8F013D00CDA0E3 /* DubaiCal.html in Resources */,
 				1A5FF8351B9091B100146F6B /* PackageDetailsViewController.xib in Resources */,
@@ -541,6 +550,7 @@
 				1A4E57EA1B8F681E00050267 /* HotelList.m in Sources */,
 				1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */,
 				1A44C4E61B8CE79E00AB1F4F /* UIColor+CustomColors.m in Sources */,
+				1A5FF8391B90B55300146F6B /* WebDisplay.m in Sources */,
 				1AADF8621B8F335500CDA0E3 /* BookingCont.m in Sources */,
 				1A4E58541B9072D600050267 /* MapView.m in Sources */,
 				1AE8E3391B8E2A1900CFC017 /* PackageOverview.m in Sources */,
