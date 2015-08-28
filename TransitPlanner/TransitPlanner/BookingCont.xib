@@ -48,6 +48,9 @@
                             <state key="normal" title="Book transit package">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="transitBooking:" destination="-1" eventType="touchUpInside" id="FCa-7P-Kv9"/>
+                            </connections>
                         </button>
                     </subviews>
                     <animations/>

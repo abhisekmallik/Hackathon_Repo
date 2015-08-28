@@ -7,8 +7,10 @@
 //
 
 #import "BookingCont.h"
+#import "HotelList.h"
 
 @interface BookingCont ()
+- (IBAction)transitBooking:(UIButton *)sender;
 
 @end
 
@@ -46,4 +48,8 @@
 }
 */
 
+- (IBAction)transitBooking:(UIButton *)sender {
+    HotelList *list = [[HotelList alloc] initWithNibName:@"HotelList" bundle:nil];
+    [self.navigationController pushViewController:list animated:YES];
+}
 @end
