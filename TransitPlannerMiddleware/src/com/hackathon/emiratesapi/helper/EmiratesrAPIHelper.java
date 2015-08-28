@@ -34,14 +34,14 @@ public class EmiratesrAPIHelper {
 	    });
 	}
 
-	public static String getJsonHotelList() {
+	public static String getJsonHotelList(String apiUrl) {
 		//String hotelListUrl = "https://ec2-52-18-199-95.eu-west-1.compute.amazonaws.com:8143/listofproperties/1.0/?Location=dubai";
-		String hotelListUrl = "https://ec2-52-18-199-95.eu-west-1.compute.amazonaws.com:8143/availableCities/1.0/"; 	 	
+		 	 	
 		String output = "";
 		StringBuffer response = new StringBuffer();
 		try {
 			
-			URL url = new URL(hotelListUrl);
+			URL url = new URL(apiUrl);
 			HttpsURLConnection conn = (HttpsURLConnection) url.openConnection();
 			conn.setRequestMethod("GET");
 			conn.setRequestProperty("Accept", "application/json");
@@ -81,6 +81,8 @@ public class EmiratesrAPIHelper {
 		return response.toString();
 	}
 
+	
+	
 	private static SSLSocketFactory getTrustedFactory()
 		    throws Exception {
 		  if (TRUSTED_FACTORY == null) {

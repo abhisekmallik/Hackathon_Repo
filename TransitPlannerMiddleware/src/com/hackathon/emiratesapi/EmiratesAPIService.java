@@ -1,26 +1,15 @@
 package com.hackathon.emiratesapi;
  
-/**
- * @author Avishek
- */
- 
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.IOException;
-
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
 import javax.ws.rs.Produces;
-import javax.ws.rs.core.Response;
-import org.json.JSONException;
-import org.json.simple.JSONArray;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-import org.json.simple.parser.ParseException;
 
+import org.json.JSONException;
+import org.json.simple.JSONObject;
+
+import com.hackathon.common.constants.TransitPlannerConstants;
 import com.hackathon.emiratesapi.helper.EmiratesrAPIHelper;
-import com.hackathon.tripadvisor.helper.TripAdvisorAPIHelper;
  
 @Path("/emiratesapi")
 public class EmiratesAPIService {
@@ -31,10 +20,20 @@ public class EmiratesAPIService {
 	  @Path("/getEmiratesLocationHotels.json")
 	  public String getLocationHotelsCustom() {
  		String jsonData = "";
- 		jsonData = EmiratesrAPIHelper.getJsonHotelList();
+ 		jsonData = EmiratesrAPIHelper.getJsonHotelList(TransitPlannerConstants.EMIRTAES_HOTEL_LIST_URL);
  		System.out.println("File Content: \n" + jsonData);
 		return jsonData;	
 	  }
+	  
+	  /*@GET
+	  @Produces("application/json")
+	  @Path("/getEmiratesLocationHotels.json")
+	  public String getSkyScannrHotels() {
+ 		String jsonData = "";
+ 		jsonData = EmiratesrAPIHelper.getJsonHotelList(TransitPlannerConstants.);
+ 		System.out.println("File Content: \n" + jsonData);
+		return jsonData;	
+	  }*/
  
  
 	  @Path("{f}")

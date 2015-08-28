@@ -1,8 +1,6 @@
 package com.hackathon.tripadvisor.helper;
 
-import java.io.File;
 import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
@@ -11,6 +9,8 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 import com.google.gson.Gson;
+import com.hackathon.common.constants.TransitPlannerConstants;
+import com.hackathon.emiratesapi.helper.EmiratesrAPIHelper;
 import com.hackathon.tripadvisor.api.Datum;
 import com.hackathon.tripadvisor.api.Example;
 import com.hackathon.tripadvisor.custom.vo.LocationHotelNode;
@@ -68,19 +68,22 @@ public class TripAdvisorAPIHelper {
 		 		locHotelVO.setRating(data.getRating());
 		 		locHotelVO.setLocationString(data.getLocationString());
 		 		locHotelVO.setLongitude(data.getLongitude());
-		 		locHotelVO.getRoomTypeRentMap().put("StandardSingle", "AED 276");
-		 		locHotelVO.getRoomTypeRentMap().put("StandardSingleBF", "AED 300");
-		 		locHotelVO.getRoomTypeRentMap().put("StandardDouble", "AED 372");
-		 		locHotelVO.getRoomTypeRentMap().put("StandardDoubleBF", "AED 472");
-		 		locHotelVO.getRoomTypeRentMap().put("DeluxSingle", "AED 872");
-		 		locHotelVO.getRoomTypeRentMap().put("DeluxSingleBF", "AED 972");
-		 		locHotelVO.getRoomTypeRentMap().put("DeluxDouble", "AED 1372");
-		 		locHotelVO.getRoomTypeRentMap().put("DeluxDoubleBF", "AED 1472");
+		 		locHotelVO.getRoomTypeRentMap().put("Standard", "AED 476");
+		 		//locHotelVO.getRoomTypeRentMap().put("StandardSingleBF", "AED 300");
+		 		//locHotelVO.getRoomTypeRentMap().put("StandardDouble", "AED 372");
+		 		//locHotelVO.getRoomTypeRentMap().put("StandardDoubleBF", "AED 472");
+		 		locHotelVO.getRoomTypeRentMap().put("Delux", "AED 872");
+		 		//locHotelVO.getRoomTypeRentMap().put("DeluxSingleBF", "AED 972");
+		 		//locHotelVO.getRoomTypeRentMap().put("DeluxDouble", "AED 1372");
+		 		//locHotelVO.getRoomTypeRentMap().put("DeluxDoubleBF", "AED 1472");
 		 		node.getLocationHotelVo().add(locHotelVO);
 	 		}
 	 		
 	 		parentNode.setNode(node);
 	 		response = gson.toJson(parentNode);
+	 		//api calls 
+	 		EmiratesrAPIHelper.getJsonHotelList(TransitPlannerConstants.EMIRTAES_HOTEL_LIST_URL);
+	 		//EmiratesrAPIHelper.getJsonHotelList(TransitPlannerConstants.SKYSCANNER_HOTEL_LIST_URL);
 		} catch (FileNotFoundException e) {
  			e.printStackTrace();
  		} catch (IOException e) {
