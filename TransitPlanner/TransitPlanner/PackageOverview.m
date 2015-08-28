@@ -27,10 +27,10 @@
     self.navigationController.topViewController.navigationItem.leftBarButtonItem = leftBtn;
     
     
-    NSString *path = [[NSBundle mainBundle] pathForResource:@"final_brochure_25sept2014_v2" ofType:@"pdf"];
-    NSURL *targetURL = [NSURL fileURLWithPath:path];
-    NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
-    [_webView loadRequest:request];
+//    NSString *path = [[NSBundle mainBundle] pathForResource:@"final_brochure_25sept2014_v2" ofType:@"pdf"];
+//    NSURL *targetURL = [NSURL fileURLWithPath:path];
+//    NSURLRequest *request = [NSURLRequest requestWithURL:targetURL];
+//    [_webView loadRequest:request];
 }
 
 - (void)didReceiveMemoryWarning {
