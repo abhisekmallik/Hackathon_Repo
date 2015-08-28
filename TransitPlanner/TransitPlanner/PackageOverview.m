@@ -16,6 +16,10 @@
 - (IBAction)dubaiCalendar:(UIButton *)sender;
 - (IBAction)stopoverInfo:(UIButton *)sender;
 
+@property (nonatomic, strong) IBOutlet UILabel *lblPoint1;
+@property (nonatomic, strong) IBOutlet UILabel *lblPoint2;
+@property (nonatomic, strong) IBOutlet UILabel *lblPoint3;
+
 @end
 
 @implementation PackageOverview
@@ -27,6 +31,11 @@
     UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(leftTopBarButtonClickedAction:)];
     
     self.navigationController.topViewController.navigationItem.leftBarButtonItem = leftBtn;
+    
+    self.lblPoint1.text = @"\u2022 Get attractive discounts on some selected package.";
+    self.lblPoint2.text = @"\u2022 Discount vouchers from partcipating investment partners are applicable for transit package bookings(**). ";
+    self.lblPoint3.text = @"\u2022 Also receive transit reward coupon code on successful bookings.";
+    
 }
 
 - (void)didReceiveMemoryWarning {
