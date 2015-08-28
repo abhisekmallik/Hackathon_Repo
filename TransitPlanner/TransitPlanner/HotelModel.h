@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface HotelModel : NSObject
 
@@ -18,5 +19,8 @@
 @property (nonatomic, strong) NSDictionary *roomType;
 
 @property (nonatomic, strong) NSString *selectedPrice;
+@property (nonatomic, strong) UIImage *image;
+@property (nonatomic, strong) NSString *selectedRoomCount;
+@property (nonatomic, strong) NSString *selectedRoomType;
 
 @end

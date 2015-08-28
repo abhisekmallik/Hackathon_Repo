@@ -49,6 +49,8 @@
 		1A5FF8351B9091B100146F6B /* PackageDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF8331B9091B100146F6B /* PackageDetailsViewController.xib */; settings = {ASSET_TAGS = (); }; };
 		1A5FF8391B90B55300146F6B /* WebDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF8371B90B55300146F6B /* WebDisplay.m */; settings = {ASSET_TAGS = (); }; };
 		1A5FF83A1B90B55300146F6B /* WebDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF8381B90B55300146F6B /* WebDisplay.xib */; settings = {ASSET_TAGS = (); }; };
+		1A5FF83F1B90D5BE00146F6B /* ReviewItinerary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF83D1B90D5BD00146F6B /* ReviewItinerary.m */; settings = {ASSET_TAGS = (); }; };
+		1A5FF8401B90D5BE00146F6B /* ReviewItinerary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF83E1B90D5BE00146F6B /* ReviewItinerary.xib */; settings = {ASSET_TAGS = (); }; };
 		1A6A38C21B862AF5009DF74D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C11B862AF5009DF74D /* main.m */; };
 		1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C41B862AF5009DF74D /* AppDelegate.m */; };
 		1A6A38CD1B862AF5009DF74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A38CC1B862AF5009DF74D /* Assets.xcassets */; };
@@ -145,6 +147,9 @@
 		1A5FF8361B90B55300146F6B /* WebDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebDisplay.h; sourceTree = "<group>"; };
 		1A5FF8371B90B55300146F6B /* WebDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebDisplay.m; sourceTree = "<group>"; };
 		1A5FF8381B90B55300146F6B /* WebDisplay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebDisplay.xib; sourceTree = "<group>"; };
+		1A5FF83C1B90D5BD00146F6B /* ReviewItinerary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReviewItinerary.h; sourceTree = "<group>"; };
+		1A5FF83D1B90D5BD00146F6B /* ReviewItinerary.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReviewItinerary.m; sourceTree = "<group>"; };
+		1A5FF83E1B90D5BE00146F6B /* ReviewItinerary.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ReviewItinerary.xib; sourceTree = "<group>"; };
 		1A6A38BD1B862AF5009DF74D /* TransitPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6A38C11B862AF5009DF74D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A6A38C31B862AF5009DF74D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -277,13 +282,45 @@
 			name = DataManager;
 			sourceTree = "<group>";
 		};
-		1A6A38B41B862AF5009DF74D = {
+		1A5FF83B1B90D57600146F6B /* Framework */ = {
 			isa = PBXGroup;
 			children = (
+				1A4E57F51B8F976000050267 /* GoogleMaps-iOS-1.9.2 */,
 				1A7EB45B1B9084F500B3EC73 /* libc++.dylib */,
 				1A7EB4591B9084E300B3EC73 /* libicucore.dylib */,
 				1A7EB4571B9084D800B3EC73 /* libz.dylib */,
 				1A7EB4551B9084CD00B3EC73 /* libxml2.dylib */,
+				1A4E584C1B9058D200050267 /* CoreText.framework */,
+				1A4E584A1B9058CB00050267 /* Social.framework */,
+				1A4E58481B9058C000050267 /* CoreTelephony.framework */,
+				1A4E58461B9058B100050267 /* CoreMotion.framework */,
+				1A4E58441B9058A400050267 /* SystemConfiguration.framework */,
+				1A4E58421B90585600050267 /* CoreData.framework */,
+				1A4E58401B90583C00050267 /* libc++.tbd */,
+				1A4E583E1B90580300050267 /* LocalAuthentication.framework */,
+				1A4E581A1B8FAD4F00050267 /* CoreLocation.framework */,
+				1A4E58181B8FAD4900050267 /* GLKit.framework */,
+				1A4E58161B8FAD4100050267 /* ImageIO.framework */,
+				1A4E58141B8FAD3600050267 /* libicucore.tbd */,
+				1A4E58121B8FAD2900050267 /* libz.tbd */,
+				1A4E58101B8FAD1D00050267 /* libxml2.tbd */,
+				1A4E580E1B8FAD0200050267 /* AVFoundation.framework */,
+				1A4E580C1B8FACFC00050267 /* AudioToolbox.framework */,
+				1A4E580A1B8FACF300050267 /* CoreGraphics.framework */,
+				1A4E58081B8FACEC00050267 /* CoreMedia.framework */,
+				1A4E58061B8FACE500050267 /* CoreVideo.framework */,
+				1A4E58041B8FACDC00050267 /* MobileCoreServices.framework */,
+				1A4E58021B8FACD400050267 /* OpenGLES.framework */,
+				1A4E58001B8FACCC00050267 /* Security.framework */,
+				1A4E57FE1B8FACC500050267 /* UIKit.framework */,
+				1A4E57FC1B8FACBB00050267 /* QuartzCore.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
+		1A6A38B41B862AF5009DF74D = {
+			isa = PBXGroup;
+			children = (
 				1A6A38BF1B862AF5009DF74D /* TransitPlanner */,
 				1A6A38D91B862AF5009DF74D /* TransitPlannerTests */,
 				1A6A38E41B862AF5009DF74D /* TransitPlannerUITests */,
@@ -305,7 +342,6 @@
 			isa = PBXGroup;
 			children = (
 				1A4E58371B9055F900050267 /* DataManager */,
-				1A4E57F51B8F976000050267 /* GoogleMaps-iOS-1.9.2 */,
 				1A4E57EC1B8F682500050267 /* Hotels */,
 				1A44C4E71B8CE89F00AB1F4F /* Fonts */,
 				1A44C4E41B8CE79E00AB1F4F /* UIColor+CustomColors.h */,
@@ -336,6 +372,9 @@
 				1A5FF8361B90B55300146F6B /* WebDisplay.h */,
 				1A5FF8371B90B55300146F6B /* WebDisplay.m */,
 				1A5FF8381B90B55300146F6B /* WebDisplay.xib */,
+				1A5FF83C1B90D5BD00146F6B /* ReviewItinerary.h */,
+				1A5FF83D1B90D5BD00146F6B /* ReviewItinerary.m */,
+				1A5FF83E1B90D5BE00146F6B /* ReviewItinerary.xib */,
 			);
 			path = TransitPlanner;
 			sourceTree = "<group>";
@@ -343,30 +382,7 @@
 		1A6A38C01B862AF5009DF74D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1A4E584C1B9058D200050267 /* CoreText.framework */,
-				1A4E584A1B9058CB00050267 /* Social.framework */,
-				1A4E58481B9058C000050267 /* CoreTelephony.framework */,
-				1A4E58461B9058B100050267 /* CoreMotion.framework */,
-				1A4E58441B9058A400050267 /* SystemConfiguration.framework */,
-				1A4E58421B90585600050267 /* CoreData.framework */,
-				1A4E58401B90583C00050267 /* libc++.tbd */,
-				1A4E583E1B90580300050267 /* LocalAuthentication.framework */,
-				1A4E581A1B8FAD4F00050267 /* CoreLocation.framework */,
-				1A4E58181B8FAD4900050267 /* GLKit.framework */,
-				1A4E58161B8FAD4100050267 /* ImageIO.framework */,
-				1A4E58141B8FAD3600050267 /* libicucore.tbd */,
-				1A4E58121B8FAD2900050267 /* libz.tbd */,
-				1A4E58101B8FAD1D00050267 /* libxml2.tbd */,
-				1A4E580E1B8FAD0200050267 /* AVFoundation.framework */,
-				1A4E580C1B8FACFC00050267 /* AudioToolbox.framework */,
-				1A4E580A1B8FACF300050267 /* CoreGraphics.framework */,
-				1A4E58081B8FACEC00050267 /* CoreMedia.framework */,
-				1A4E58061B8FACE500050267 /* CoreVideo.framework */,
-				1A4E58041B8FACDC00050267 /* MobileCoreServices.framework */,
-				1A4E58021B8FACD400050267 /* OpenGLES.framework */,
-				1A4E58001B8FACCC00050267 /* Security.framework */,
-				1A4E57FE1B8FACC500050267 /* UIKit.framework */,
-				1A4E57FC1B8FACBB00050267 /* QuartzCore.framework */,
+				1A5FF83B1B90D57600146F6B /* Framework */,
 				1AE8E3341B8E292900CFC017 /* final_brochure_25sept2014_v2.pdf */,
 				1A6A38C11B862AF5009DF74D /* main.m */,
 				1AADF8511B8EE89B00CDA0E3 /* Tours.plist */,
@@ -509,6 +525,7 @@
 				1AADF85E1B8F20F900CDA0E3 /* AdvFlightSearch.xib in Resources */,
 				1AADF8591B8F06AF00CDA0E3 /* PackListing.xib in Resources */,
 				1A5FF83A1B90B55300146F6B /* WebDisplay.xib in Resources */,
+				1A5FF8401B90D5BE00146F6B /* ReviewItinerary.xib in Resources */,
 				1A4E57EB1B8F681E00050267 /* HotelList.xib in Resources */,
 				1AADF8541B8F013D00CDA0E3 /* DubaiCal.html in Resources */,
 				1A5FF8351B9091B100146F6B /* PackageDetailsViewController.xib in Resources */,
@@ -541,6 +558,7 @@
 			files = (
 				1A44C4E21B8CE5C300AB1F4F /* FlightSearchVC.m in Sources */,
 				1A4E583A1B90560C00050267 /* DataManager.m in Sources */,
+				1A5FF83F1B90D5BE00146F6B /* ReviewItinerary.m in Sources */,
 				1A5FF8341B9091B100146F6B /* PackageDetailsViewController.m in Sources */,
 				1AADF85D1B8F20F900CDA0E3 /* AdvFlightSearch.m in Sources */,
 				1A4E57EF1B8F6EBC00050267 /* HotelCell.m in Sources */,

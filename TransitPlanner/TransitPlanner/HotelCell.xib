@@ -41,8 +41,8 @@
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KxU-Lu-A4r">
-                    <rect key="frame" x="116" y="49" width="196" height="59"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="KxU-Lu-A4r">
+                    <rect key="frame" x="116" y="49" width="196" height="34"/>
                     <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxY="YES"/>
                     <animations/>
                     <string key="text">Hotel Address Hotel Address  Hotel Address  Hotel Address  Hotel Address  Hotel Address  Hotel Address  Hotel Address  Hotel Address  Hotel Address </string>
@@ -160,7 +160,7 @@
                 <outlet property="hotelRoomPrice" destination="wP7-Ml-c95" id="dpQ-DH-j10"/>
                 <outlet property="txtRoomCount" destination="B9z-mv-7SF" id="nAn-a1-DRf"/>
             </connections>
-            <point key="canvasLocation" x="-242" y="-292"/>
+            <point key="canvasLocation" x="-130" y="-315"/>
         </view>
     </objects>
     <resources>

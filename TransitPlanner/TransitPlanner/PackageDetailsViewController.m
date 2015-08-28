@@ -7,6 +7,7 @@
 //
 
 #import "PackageDetailsViewController.h"
+#import "ReviewItinerary.h"
 
 @interface PackageDetailsViewController ()
 @property (nonatomic, strong) IBOutlet UIScrollView *scrl;
@@ -14,6 +15,7 @@
 @property (nonatomic, strong) IBOutlet UIImageView *imgBg2;
 @property (nonatomic, strong) IBOutlet UIImageView *imgBg;
 @property (nonatomic, assign) IBOutlet UILabel *lblPrice;
+- (IBAction)purchaseAction:(UIButton *)sender;
 @end
 
 @implementation PackageDetailsViewController
@@ -28,7 +30,7 @@
     self.imgBg2.image = [UIImage imageNamed:@"desert-safari-dubai-safari_in_dubai.jpg"];
     self.imgBg.image = [UIImage imageNamed:@"o-DUBAI-TIME-LAPSE-VIDEO-facebook.jpg"];
     
-    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:@"AED 3000"];
+    NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:@"AED 1000"];
     [attributeString addAttribute:NSStrikethroughStyleAttributeName
                             value:@2
                             range:NSMakeRange(0, [attributeString length])];
@@ -59,4 +61,8 @@
 }
 */
 
+- (IBAction)purchaseAction:(UIButton *)sender {
+    ReviewItinerary *review = [[ReviewItinerary alloc] initWithNibName:@"ReviewItinerary" bundle:nil];
+    [self.navigationController pushViewController:review animated:YES];
+}
 @end

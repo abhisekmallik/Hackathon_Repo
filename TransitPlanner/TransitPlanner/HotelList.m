@@ -49,6 +49,8 @@
         
         cell.hotelImage.image = [UIImage imageNamed:[self.arrImageNames objectAtIndex:count]];
         
+        model.image = [UIImage imageNamed:[self.arrImageNames objectAtIndex:count]];
+        
         CGRect rect = cell.frame;
         rect.size.height = height;
         rect.origin = CGPointMake(0, y);
@@ -61,7 +63,7 @@
         cell.layer.shadowRadius = 2.5f;
         
         [_baseScrollview addSubview:cell];
-        count = count + 1;
+        count++;
         y += height + gap;
     }
     
@@ -96,6 +98,11 @@
 }
 
 - (void)selectHotel:(HotelModel *)model withPrice:(NSString *)price {
+    
+    DataManager *mgr = [DataManager sharedInstance];
+    mgr.selectedHotel = model;
+    mgr.selectedPrice = price;
+    
     PackageDetailsViewController *packageDetails = [[PackageDetailsViewController alloc] initWithNibName:@"PackageDetailsViewController" bundle:nil];
     [self.navigationController pushViewController:packageDetails animated:YES];
 }

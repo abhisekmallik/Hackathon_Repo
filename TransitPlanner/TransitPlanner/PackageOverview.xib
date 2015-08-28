@@ -68,9 +68,9 @@
                     <rect key="frame" x="11" y="8" width="292" height="187"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                     <animations/>
-                    <mutableString key="text">Book Emiartes Transit Planner Package and get attractive discounts on some selected package.Discount vouchers from partcipating investment partners are applicable for transit package bookings(**).Also receive transit reward coupon code on successful boookings which can be redeemed online .
+                    <string key="text">Book Emiartes Transit Planner Package and get attractive discounts on some selected package.Discount vouchers from partcipating investment partners are applicable for transit package bookings(**).Also receive transit reward coupon code on successful boookings which can be redeemed online .
 **Vouchers can be availed over the Transit Travel counters in the Dubai International Airport (T3).
-*Use Emirates iOS Apps which are integrated with Becaons installed in Airport at different zones - where by  Airport staffs will guide you to the Transit Travel counters for availing vouchers.</mutableString>
+*Use Emirates iOS Apps which are integrated with Becaons installed in Airport at different zones - where by  Airport staffs will guide you to the Transit Travel counters for availing vouchers.</string>
                     <fontDescription key="fontDescription" name="EmiratesSL" family="Emirates SL" pointSize="13"/>
                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
@@ -92,11 +92,23 @@
                         <action selector="stopoverInfo:" destination="-1" eventType="touchUpInside" id="FuO-gY-M67"/>
                     </connections>
                 </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="jDY-Sj-eHz">
+                    <rect key="frame" x="0.0" y="241" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.27843138579999999" green="0.09803922474" blue="0.070588238540000001" alpha="1" colorSpace="deviceRGB"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="X6i-Ky-riu">
+                    <rect key="frame" x="0.0" y="349" width="320" height="1"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.27843138579999999" green="0.09803922474" blue="0.070588238540000001" alpha="1" colorSpace="deviceRGB"/>
+                </imageView>
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-            <point key="canvasLocation" x="-75" y="-756"/>
+            <point key="canvasLocation" x="-253" y="-760"/>
         </view>
     </objects>
     <resources>

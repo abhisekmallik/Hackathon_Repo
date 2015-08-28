@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "HotelModel.h"
 
 @protocol DataManagerDelegate <NSObject>
 
@@ -20,5 +21,9 @@
 @property (nonatomic, strong) NSMutableArray *arrHotels;
 @property (nonatomic, assign) id <DataManagerDelegate> delegate;
 - (void)parseHotelAPI:(NSDictionary *)dictResponse;
+
+
+@property (nonatomic, strong) HotelModel *selectedHotel;
+@property (nonatomic, strong) NSString *selectedPrice;
 
 @end
