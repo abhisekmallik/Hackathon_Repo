@@ -214,6 +214,9 @@
                             <state key="normal" title="Purchase">
                                 <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </state>
+                            <connections>
+                                <action selector="purchaseItinerary:" destination="-1" eventType="touchUpInside" id="h29-nB-bwy"/>
+                            </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grand total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="qXU-Ba-gn3">
                             <rect key="frame" x="218" y="5" width="92" height="21"/>

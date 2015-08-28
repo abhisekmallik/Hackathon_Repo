@@ -7,8 +7,12 @@
 //
 
 #import "ConfirmTransit.h"
+#import "CouponDisplay.h"
 
 @interface ConfirmTransit ()
+- (IBAction)rewardsAction:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UIView *view1;
+@property (weak, nonatomic) IBOutlet UIView *view2;
 
 @end
 
@@ -17,6 +21,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"Confirmation";
+    
+    //shadow
+    _view1.layer.shadowColor = [UIColor blackColor].CGColor;
+    _view1.layer.shadowOpacity = 0.35f;
+    _view1.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
+    _view1.layer.shadowRadius = 2.5f;
+    
+    //shadow
+    _view2.layer.shadowColor = [UIColor blackColor].CGColor;
+    _view2.layer.shadowOpacity = 0.35f;
+    _view2.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
+    _view2.layer.shadowRadius = 2.5f;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +51,8 @@
 }
 */
 
+- (IBAction)rewardsAction:(UIButton *)sender {
+    CouponDisplay *display = [[CouponDisplay alloc] initWithNibName:@"CouponDisplay" bundle:nil];
+    [self.navigationController pushViewController:display animated:YES];
+}
 @end

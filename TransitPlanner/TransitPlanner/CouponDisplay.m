@@ -9,6 +9,9 @@
 #import "CouponDisplay.h"
 
 @interface CouponDisplay ()
+@property (weak, nonatomic) IBOutlet UIView *coupon1;
+@property (weak, nonatomic) IBOutlet UIView *coupon2;
+@property (weak, nonatomic) IBOutlet UIView *coupon3;
 
 @end
 
@@ -17,6 +20,25 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.title = @"Rewards";
+    
+    //shadow
+    _coupon1.layer.shadowColor = [UIColor blackColor].CGColor;
+    _coupon1.layer.shadowOpacity = 0.35f;
+    _coupon1.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
+    _coupon1.layer.shadowRadius = 2.5f;
+    
+    //shadow
+    _coupon2.layer.shadowColor = [UIColor blackColor].CGColor;
+    _coupon2.layer.shadowOpacity = 0.35f;
+    _coupon2.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
+    _coupon2.layer.shadowRadius = 2.5f;
+    
+    //shadow
+    _coupon3.layer.shadowColor = [UIColor blackColor].CGColor;
+    _coupon3.layer.shadowOpacity = 0.35f;
+    _coupon3.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
+    _coupon3.layer.shadowRadius = 2.5f;
 }
 
 - (void)didReceiveMemoryWarning {

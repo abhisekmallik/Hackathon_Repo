@@ -10,6 +10,7 @@
 #import "DataManager.h"
 #import "HotelModel.h"
 #import "HotelCell.h"
+#import "ConfirmTransit.h"
 
 @interface ReviewItinerary ()
 @property (weak, nonatomic) IBOutlet UILabel *hotelName;
@@ -23,6 +24,7 @@
 
 @property (weak, nonatomic) IBOutlet UIView *packageView;
 @property (weak, nonatomic) IBOutlet HotelCell *hotelCell;
+- (IBAction)purchaseItinerary:(UIButton *)sender;
 @end
 
 @implementation ReviewItinerary
@@ -30,6 +32,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.title = @"Review Itinerary";
     
     DataManager *mgr = [DataManager sharedInstance];
     HotelModel *hotel = mgr.selectedHotel;
@@ -42,7 +46,7 @@
     NSString *ratingImage = [NSString stringWithFormat:@"%@-MCID-%ld",hotel.rating, [hotel.rating integerValue]];
     
     _imgRating.image = [UIImage imageNamed:ratingImage];
-    _price.text = [NSString stringWithFormat:@"AED %@",hotel.selectedPrice];
+    _price.text = [NSString stringWithFormat:@"%@",hotel.selectedPrice];
     
     NSString *strPrice = [hotel.selectedPrice stringByReplacingOccurrencesOfString:@"AED " withString:@""];
     CGFloat price = [strPrice floatValue] + 700;
@@ -78,4 +82,8 @@
 }
 */
 
+- (IBAction)purchaseItinerary:(UIButton *)sender {
+    ConfirmTransit *confirm = [[ConfirmTransit alloc] initWithNibName:@"ConfirmTransit" bundle:nil];
+    [self.navigationController pushViewController:confirm animated:YES];
+}
 @end
