@@ -8,8 +8,12 @@
 
 #import "HotelList.h"
 #import "HotelCell.h"
+#import <GoogleMaps/GoogleMaps.h>
+#import "DataManager.h"
+#import "HotelModel.h"
+#import "MapView.h"
 
-@interface HotelList ()
+@interface HotelList () <HotelCellDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *baseScrollview;
 
 @end
@@ -19,18 +23,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    DataManager *mgr = [DataManager sharedInstance];
+    NSInteger height = 296;
+    NSInteger gap = 10.0f;
+    
     CGFloat y = 0.0f;
-    for (int i = 0; i < 20; i++) {
+    for (HotelModel *model in mgr.arrHotels) {
+
         NSArray *xib = [[NSBundle mainBundle] loadNibNamed:@"HotelCell" owner:self options:nil];
         HotelCell * cell = [xib firstObject];
-        cell.hotelName.text = @"Airport Hotel";
-        cell.hotelAddress.text = @"Dubai International Airport, Terminal 3, Garhoud, Dubai";
-        cell.hotelPaxCount.text = @"Adult: 1";
-        cell.hotelRoomPrice.text = @"AED 159";
+        cell.model = model;
+        cell.delegate = self;
         [cell setupView];
         
         CGRect rect = cell.frame;
-        rect.size.height = 227;
+        rect.size.height = height;
         rect.origin = CGPointMake(0, y);
         cell.frame = rect;
         
@@ -42,10 +49,10 @@
         
         [_baseScrollview addSubview:cell];
         
-        y += 227 + 10.0f;
+        y += height + gap;
     }
     
-    _baseScrollview.contentSize = CGSizeMake(321, 20 * (227 + 10));
+    _baseScrollview.contentSize = CGSizeMake(320, [mgr.arrHotels count] * (height + gap));
 }
 
 - (void)didReceiveMemoryWarning {
@@ -62,5 +69,21 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+
+
+
+#pragma mark - HotelCellDelegate
+- (void)invokeMapForHotel:(HotelModel *)model {
+        
+    MapView *map = [[MapView alloc] initWithNibName:@"MapView" bundle:nil];
+    map.model = model;
+    [self.navigationController pushViewController:map animated:YES];
+}
+
+- (void)selectHotel:(HotelModel *)model withPrice:(NSString *)price {
+    
+}
 
 @end
