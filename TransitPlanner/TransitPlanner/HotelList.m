@@ -23,6 +23,8 @@
 
 - (void)viewDidLoad {
     
+    self.title = @"Hotel List";
+    
     self.navigationItem.hidesBackButton = YES;
     self.navigationItem.leftBarButtonItems = nil;
     
