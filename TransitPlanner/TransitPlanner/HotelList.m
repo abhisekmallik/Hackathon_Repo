@@ -26,7 +26,7 @@
     
     self.title = @"Hotel List";
     
-    _arrImageNames = [[NSMutableArray alloc] initWithObjects:@"Goldensands.jpg",@"MovenPick.jpg",@"ibnbatutta_innerbig.jpg",@"DownTown.jpg", @"Atlantis.jpg",@"Movenpick-jumeirah.jpg",@"LondonCrown.jpeg",@"Hyatt.jpegg",@"LondonCreek.jpg", nil];
+    _arrImageNames = [[NSMutableArray alloc] initWithObjects:@"Goldensands",@"MovenPick",@"ibnbatutta_innerbig",@"DownTown", @"Atlantis",@"Movenpick-jumeirah",@"LondonCrown",@"Hyatt",@"LondonCreek", nil];
     
     
     self.navigationItem.hidesBackButton = YES;
