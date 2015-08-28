@@ -16,6 +16,7 @@
 
 @interface HotelList () <HotelCellDelegate>
 @property (weak, nonatomic) IBOutlet UIScrollView *baseScrollview;
+@property (nonatomic, strong) NSMutableArray *arrImageNames;
 
 @end
 
@@ -24,6 +25,9 @@
 - (void)viewDidLoad {
     
     self.title = @"Hotel List";
+    
+    _arrImageNames = [[NSMutableArray alloc] initWithObjects:@"Goldensands.jpg",@"MovenPick.jpg",@"ibnbatutta_innerbig.jpg",@"DownTown.jpg", @"Atlantis.jpg",@"Movenpick-jumeirah.jpg",@"LondonCrown.jpeg",@"Hyatt.jpegg",@"LondonCreek.jpg", nil];
+    
     
     self.navigationItem.hidesBackButton = YES;
     self.navigationItem.leftBarButtonItems = nil;
@@ -34,6 +38,7 @@
     NSInteger gap = 10.0f;
     
     CGFloat y = 0.0f;
+    NSInteger count = 0;
     for (HotelModel *model in mgr.arrHotels) {
 
         NSArray *xib = [[NSBundle mainBundle] loadNibNamed:@"HotelCell" owner:self options:nil];
@@ -41,7 +46,8 @@
         cell.model = model;
         cell.delegate = self;
         [cell setupView];    [super viewDidLoad];
-
+        
+        cell.hotelImage.image = [UIImage imageNamed:[self.arrImageNames objectAtIndex:count]];
         
         CGRect rect = cell.frame;
         rect.size.height = height;
@@ -55,7 +61,7 @@
         cell.layer.shadowRadius = 2.5f;
         
         [_baseScrollview addSubview:cell];
-        
+        count = count + 1;
         y += height + gap;
     }
     
