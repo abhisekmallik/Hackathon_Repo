@@ -26,6 +26,10 @@
     
     self.title = @"Package Details";
     
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(leftTopBarButtonClickedAction:)];
+    
+    self.navigationController.topViewController.navigationItem.leftBarButtonItem = leftBtn;
+    
     self.imgBg1.image = [UIImage imageNamed:@"dubai HOHO rs (960 x 356).jpg"];
     self.imgBg2.image = [UIImage imageNamed:@"desert-safari-dubai-safari_in_dubai.jpg"];
     self.imgBg.image = [UIImage imageNamed:@"o-DUBAI-TIME-LAPSE-VIDEO-facebook.jpg"];
@@ -37,14 +41,16 @@
     
     self.lblPrice.attributedText = attributeString;
     
-//    
-//    [attributeString addAttributes:@{NSStrikethroughStyleAttributeName: @(NSUnderlineStyleSingle)
-//                                      , NSStrikethroughColorAttributeName: [UIColor redColor]
-//                                     , NSBackgroundColorAttributeName: [UIColor yellowColor]}];
-//    
-    
-    
+   
 }
+
+
+- (void)leftTopBarButtonClickedAction:(UIBarButtonItem *)button
+{
+    // Use Navigation Controller's category instead of view controller methods
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -52,14 +58,14 @@
 }
 
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (IBAction)purchaseAction:(UIButton *)sender {
     ReviewItinerary *review = [[ReviewItinerary alloc] initWithNibName:@"ReviewItinerary" bundle:nil];
