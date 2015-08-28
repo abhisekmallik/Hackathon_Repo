@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "HotelModel.h"
 
+@protocol HotelCellDelegate <NSObject>
+
+- (void)selectHotel:(HotelModel *)model withPrice:(NSString *)price;
+- (void)invokeMapForHotel:(HotelModel *)model;
+
+@end
+
 @interface HotelCell : UIView
 @property (weak, nonatomic) IBOutlet UIImageView *hotelImage;
 @property (weak, nonatomic) IBOutlet UILabel *hotelName;
@@ -18,5 +25,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *hotelRoomPrice;
 
 @property (strong, nonatomic) HotelModel *model;
+@property (assign, nonatomic) id<HotelCellDelegate> delegate;
+
 - (void)setupView;
 @end

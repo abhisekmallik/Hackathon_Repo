@@ -125,4 +125,9 @@
     [[UISegmentedControl appearance] setTintColor:[UIColor colorFromHex:@"#d71921"]];
 }
 
+-(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+    
+    return YES;
+}
+
 @end

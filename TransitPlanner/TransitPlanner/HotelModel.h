@@ -17,4 +17,6 @@
 @property (nonatomic, strong) NSString *rating;
 @property (nonatomic, strong) NSDictionary *roomType;
 
+@property (nonatomic, strong) NSString *selectedPrice;
+
 @end
