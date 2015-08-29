@@ -163,7 +163,7 @@
 		1A6374AB1B910C5A00156849 /* CouponDisplay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponDisplay.xib; sourceTree = "<group>"; };
 		1A6374AE1B91280000156849 /* WASWhatsAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASWhatsAppUtil.h; sourceTree = "<group>"; };
 		1A6374AF1B91280000156849 /* WASWhatsAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASWhatsAppUtil.m; sourceTree = "<group>"; };
-		1A6A38BD1B862AF5009DF74D /* TransitPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A6A38BD1B862AF5009DF74D /* Hello Dubai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Dubai.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6A38C11B862AF5009DF74D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A6A38C31B862AF5009DF74D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1A6A38C41B862AF5009DF74D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -344,7 +344,7 @@
 		1A6A38BE1B862AF5009DF74D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A6A38BD1B862AF5009DF74D /* TransitPlanner.app */,
+				1A6A38BD1B862AF5009DF74D /* Hello Dubai.app */,
 				1A6A38D61B862AF5009DF74D /* TransitPlannerTests.xctest */,
 				1A6A38E11B862AF5009DF74D /* TransitPlannerUITests.xctest */,
 			);
@@ -447,7 +447,7 @@
 			);
 			name = TransitPlanner;
 			productName = TransitPlanner;
-			productReference = 1A6A38BD1B862AF5009DF74D /* TransitPlanner.app */;
+			productReference = 1A6A38BD1B862AF5009DF74D /* Hello Dubai.app */;
 			productType = "com.apple.product-type.application";
 		};
 		1A6A38D51B862AF5009DF74D /* TransitPlannerTests */ = {
@@ -727,8 +727,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.hackathon.TransitPlanner;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.enterprise.EKiPhone;
+				PRODUCT_NAME = "Hello Dubai";
+				PROVISIONING_PROFILE = "c01a61b2-debc-4498-9569-f1cb963699cd";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -746,8 +747,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-ObjC";
-				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.hackathon.TransitPlanner;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.enterprise.EKiPhone;
+				PRODUCT_NAME = "Hello Dubai";
+				PROVISIONING_PROFILE = "c01a61b2-debc-4498-9569-f1cb963699cd";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

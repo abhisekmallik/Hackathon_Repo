@@ -83,7 +83,7 @@
     
     // Configure the apperence of the circle
     circle.fillColor = [UIColor clearColor].CGColor;
-    circle.strokeColor = [UIColor blueColor].CGColor;
+    circle.strokeColor = [UIColor redColor].CGColor;
     circle.lineWidth = 4;
     
     // Add to parent layer

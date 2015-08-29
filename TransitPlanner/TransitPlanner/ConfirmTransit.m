@@ -24,6 +24,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"Confirmation";
+    self.navigationItem.hidesBackButton = YES;
+    self.navigationItem.leftBarButtonItems = nil;
     
     //shadow
     _view1.layer.shadowColor = [UIColor blackColor].CGColor;
@@ -43,16 +45,7 @@
     _view3.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
     _view3.layer.shadowRadius = 2.5f;
     
-    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(leftTopBarButtonClickedAction:)];
     
-    self.navigationController.topViewController.navigationItem.leftBarButtonItem = leftBtn;
-    
-}
-
-- (void)leftTopBarButtonClickedAction:(UIBarButtonItem *)button
-{
-    // Use Navigation Controller's category instead of view controller methods
-    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
