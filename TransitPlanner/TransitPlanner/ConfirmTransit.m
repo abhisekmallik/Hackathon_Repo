@@ -14,6 +14,7 @@
 - (IBAction)rewardsAction:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIView *view1;
 @property (weak, nonatomic) IBOutlet UIView *view2;
+@property (weak, nonatomic) IBOutlet UIView *view3;
 
 @end
 
@@ -35,6 +36,12 @@
     _view2.layer.shadowOpacity = 0.35f;
     _view2.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
     _view2.layer.shadowRadius = 2.5f;
+    
+    //shadow
+    _view3.layer.shadowColor = [UIColor blackColor].CGColor;
+    _view3.layer.shadowOpacity = 0.35f;
+    _view3.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
+    _view3.layer.shadowRadius = 2.5f;
     
     UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(leftTopBarButtonClickedAction:)];
     

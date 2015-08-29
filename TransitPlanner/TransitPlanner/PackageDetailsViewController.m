@@ -11,11 +11,15 @@
 
 @interface PackageDetailsViewController ()
 @property (nonatomic, strong) IBOutlet UIScrollView *scrl;
-@property (nonatomic, strong) IBOutlet UIImageView *imgBg1;
-@property (nonatomic, strong) IBOutlet UIImageView *imgBg2;
-@property (nonatomic, strong) IBOutlet UIImageView *imgBg;
 @property (nonatomic, assign) IBOutlet UILabel *lblPrice;
 - (IBAction)purchaseAction:(UIButton *)sender;
+
+@property (strong, nonatomic) IBOutlet UIView *day1;
+@property (strong, nonatomic) IBOutlet UIView *day2;
+@property (strong, nonatomic) IBOutlet UIView *day3;
+@property (strong, nonatomic) IBOutlet UIView *price;
+
+
 @end
 
 @implementation PackageDetailsViewController
@@ -30,10 +34,6 @@
     
     self.navigationController.topViewController.navigationItem.leftBarButtonItem = leftBtn;
     
-    self.imgBg1.image = [UIImage imageNamed:@"dubai HOHO rs (960 x 356).jpg"];
-    self.imgBg2.image = [UIImage imageNamed:@"desert-safari-dubai-safari_in_dubai.jpg"];
-    self.imgBg.image = [UIImage imageNamed:@"o-DUBAI-TIME-LAPSE-VIDEO-facebook.jpg"];
-    
     NSMutableAttributedString *attributeString = [[NSMutableAttributedString alloc] initWithString:@"AED 1000"];
     [attributeString addAttribute:NSStrikethroughStyleAttributeName
                             value:@2
@@ -42,6 +42,72 @@
     self.lblPrice.attributedText = attributeString;
     
    
+    NSInteger y = 0;
+    NSInteger gap = 10;
+    
+    CGRect frame = _day1.frame;
+    frame.origin.y = 0;
+    frame.origin.x = 0;
+    _day1.frame = frame;
+    
+    //shadow
+    _day1.layer.shadowColor = [UIColor blackColor].CGColor;
+    _day1.layer.shadowOpacity = 0.35f;
+    _day1.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
+    _day1.layer.shadowRadius = 2.5f;
+    
+    [_scrl addSubview:_day1];
+    
+    
+    y += frame.size.height + gap;
+    
+    frame = _day2.frame;
+    frame.origin.y = y;
+    frame.origin.x = 0;
+    _day2.frame = frame;
+    
+    //shadow
+    _day2.layer.shadowColor = [UIColor blackColor].CGColor;
+    _day2.layer.shadowOpacity = 0.35f;
+    _day2.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
+    _day2.layer.shadowRadius = 2.5f;
+    
+    [_scrl addSubview:_day2];
+    
+    y += frame.size.height + gap;
+    
+    frame = _day3.frame;
+    frame.origin.y = y;
+    frame.origin.x = 0;
+    _day3.frame = frame;
+    
+    //shadow
+    _day3.layer.shadowColor = [UIColor blackColor].CGColor;
+    _day3.layer.shadowOpacity = 0.35f;
+    _day3.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
+    _day3.layer.shadowRadius = 2.5f;
+    
+    [_scrl addSubview:_day3];
+    
+    y += frame.size.height + gap;
+    
+    frame = _price.frame;
+    frame.origin.y = y;
+    frame.origin.x = 0;
+    _price.frame = frame;
+    
+    //shadow
+    _price.layer.shadowColor = [UIColor blackColor].CGColor;
+    _price.layer.shadowOpacity = 0.35f;
+    _price.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
+    _price.layer.shadowRadius = 2.5f;
+    
+    [_scrl addSubview:_price];
+    
+    y += frame.size.height + gap;
+    
+    
+    _scrl.contentSize = CGSizeMake(320, y);
 }
 
 

@@ -55,6 +55,7 @@
 		1A6374A81B91012600156849 /* ConfirmTransit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6374A61B91012600156849 /* ConfirmTransit.xib */; settings = {ASSET_TAGS = (); }; };
 		1A6374AC1B910C5A00156849 /* CouponDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6374AA1B910C5A00156849 /* CouponDisplay.m */; settings = {ASSET_TAGS = (); }; };
 		1A6374AD1B910C5A00156849 /* CouponDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6374AB1B910C5A00156849 /* CouponDisplay.xib */; settings = {ASSET_TAGS = (); }; };
+		1A6374B01B91280000156849 /* WASWhatsAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6374AF1B91280000156849 /* WASWhatsAppUtil.m */; settings = {ASSET_TAGS = (); }; };
 		1A6A38C21B862AF5009DF74D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C11B862AF5009DF74D /* main.m */; };
 		1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C41B862AF5009DF74D /* AppDelegate.m */; };
 		1A6A38CD1B862AF5009DF74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A38CC1B862AF5009DF74D /* Assets.xcassets */; };
@@ -160,6 +161,8 @@
 		1A6374A91B910C5A00156849 /* CouponDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CouponDisplay.h; sourceTree = "<group>"; };
 		1A6374AA1B910C5A00156849 /* CouponDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CouponDisplay.m; sourceTree = "<group>"; };
 		1A6374AB1B910C5A00156849 /* CouponDisplay.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CouponDisplay.xib; sourceTree = "<group>"; };
+		1A6374AE1B91280000156849 /* WASWhatsAppUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WASWhatsAppUtil.h; sourceTree = "<group>"; };
+		1A6374AF1B91280000156849 /* WASWhatsAppUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WASWhatsAppUtil.m; sourceTree = "<group>"; };
 		1A6A38BD1B862AF5009DF74D /* TransitPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransitPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A6A38C11B862AF5009DF74D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1A6A38C31B862AF5009DF74D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -351,6 +354,8 @@
 		1A6A38BF1B862AF5009DF74D /* TransitPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				1A6374AE1B91280000156849 /* WASWhatsAppUtil.h */,
+				1A6374AF1B91280000156849 /* WASWhatsAppUtil.m */,
 				1A4E58371B9055F900050267 /* DataManager */,
 				1A4E57EC1B8F682500050267 /* Hotels */,
 				1A44C4E71B8CE89F00AB1F4F /* Fonts */,
@@ -587,6 +592,7 @@
 				1A4E57F41B8F8C3B00050267 /* NIDropDown.m in Sources */,
 				1A4E57EA1B8F681E00050267 /* HotelList.m in Sources */,
 				1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */,
+				1A6374B01B91280000156849 /* WASWhatsAppUtil.m in Sources */,
 				1A44C4E61B8CE79E00AB1F4F /* UIColor+CustomColors.m in Sources */,
 				1A5FF8391B90B55300146F6B /* WebDisplay.m in Sources */,
 				1AADF8621B8F335500CDA0E3 /* BookingCont.m in Sources */,
@@ -712,6 +718,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Emirates Airlines";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TransitPlanner/GoogleMaps-iOS-1.9.2",
@@ -730,6 +737,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Emirates Airlines";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TransitPlanner/GoogleMaps-iOS-1.9.2",
