@@ -95,15 +95,6 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                             <animations/>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="RRJ-Yb-cWz">
-                            <rect key="frame" x="290" y="151" width="22" height="38"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                            <animations/>
-                            <state key="normal" image="icn_map_pin"/>
-                            <connections>
-                                <action selector="mapInvokeAction:" destination="bzy-cU-hQ7" eventType="touchUpInside" id="hxo-SG-SQx"/>
-                            </connections>
-                        </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yt6-Eq-0oh">
                             <rect key="frame" x="127" y="120" width="76" height="21"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
@@ -263,6 +254,5 @@
     <resources>
         <image name="3.0-MCID-3" width="119" height="20"/>
         <image name="Dubai_City_Tour_Desert_Safari" width="768" height="576"/>
-        <image name="icn_map_pin" width="11" height="19"/>
     </resources>
 </document>
