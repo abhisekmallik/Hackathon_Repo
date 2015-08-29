@@ -29,7 +29,16 @@ __strong static WASWhatsAppUtil* instanceOf = nil;
 
 - (void)sendText:(NSString*)message
 {
-	NSString	*urlWhats		= [NSString stringWithFormat:@"whatsapp://send?text=%@",message];
+	
+    message = [message stringByReplacingOccurrencesOfString:@":" withString:@"%3A"];
+    message = [message stringByReplacingOccurrencesOfString:@"/" withString:@"%2F"];
+    message = [message stringByReplacingOccurrencesOfString:@"?" withString:@"%3F"];
+    message = [message stringByReplacingOccurrencesOfString:@"," withString:@"%2C"];
+    message = [message stringByReplacingOccurrencesOfString:@"=" withString:@"%3D"];
+    message = [message stringByReplacingOccurrencesOfString:@"&" withString:@"%26"];
+    
+
+    NSString	*urlWhats		= [NSString stringWithFormat:@"whatsapp://send?text=%@",message];
 	NSURL		*whatsappURL	= [NSURL URLWithString:[urlWhats stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
 	
 	if ( [self isWhatsAppInstalled] ) {
