@@ -54,7 +54,7 @@
 }
 
 - (IBAction)btnShareDidSelect:(id)sender {
-    [[WASWhatsAppUtil getInstance] sendText:@"Pleae visit appstore link: https://itunes.apple.com/in/app/emirates/id714004391?mt=8 to install iPhone Emirates app and book Emirates transit package at discounted price."];
+    [[WASWhatsAppUtil getInstance] sendText:@"I have just booked a Emirates transit package at an attractive discount rate and received redeem coupon and skyward miles. You can also book the same by using the Emirates App for iOS and enjoy the redeem coupon shared by me to avail discount on Emirates transit package booking.."];
 }
 
 /*

@@ -8,6 +8,48 @@
 
 #import "WASWhatsAppUtil.h"
 
+
+@interface NSString (URLEncoding)
+- (NSString *)URLEncodedString;
+- (NSString *)URLDecodedString;
+@end
+
+@implementation NSString (URLEncoding)
+
+- (NSDictionary *)parametersFromEncodedQueryString
+{
+    NSArray *encodedParameterPairs = [self componentsSeparatedByString:@"&"];
+    NSMutableDictionary *requestParameters = [NSMutableDictionary dictionary];
+    
+    for (NSString *encodedPair in encodedParameterPairs) {
+        NSArray *encodedPairElements = [encodedPair componentsSeparatedByString:@"="];
+        if (encodedPairElements.count == 2) {
+            [requestParameters setValue:[[encodedPairElements objectAtIndex:1] URLDecodedString]
+                                 forKey:[[encodedPairElements objectAtIndex:0] URLDecodedString]];
+        }
+    }
+    return requestParameters;
+}
+
+- (NSString *)URLEncodedString
+{
+    return (__bridge_transfer NSString *) CFURLCreateStringByAddingPercentEscapes(kCFAllocatorDefault, //Allocator
+                                                                                  (__bridge CFStringRef)self, //Original String
+                                                                                  NULL, //Characters to leave unescaped
+                                                                                  CFSTR("!*'();:@&=+$,/?%#[]"), //Legal Characters to be escaped
+                                                                                  kCFStringEncodingUTF8); //Encoding
+}
+
+- (NSString *)URLDecodedString
+{
+    return (__bridge_transfer NSString *) CFURLCreateStringByReplacingPercentEscapesUsingEncoding(kCFAllocatorDefault,
+                                                                                                  (__bridge CFStringRef)self,
+                                                                                                  CFSTR(""),
+                                                                                                  kCFStringEncodingUTF8);
+}
+
+@end
+
 __strong static WASWhatsAppUtil* instanceOf = nil;
 
 @interface WASWhatsAppUtil()<UIDocumentInteractionControllerDelegate>{
@@ -27,16 +69,19 @@ __strong static WASWhatsAppUtil* instanceOf = nil;
 	return instanceOf;
 }
 
+
+
 - (void)sendText:(NSString*)message
 {
 	
-    message = [message stringByReplacingOccurrencesOfString:@":" withString:@"%3A"];
-    message = [message stringByReplacingOccurrencesOfString:@"/" withString:@"%2F"];
-    message = [message stringByReplacingOccurrencesOfString:@"?" withString:@"%3F"];
-    message = [message stringByReplacingOccurrencesOfString:@"," withString:@"%2C"];
-    message = [message stringByReplacingOccurrencesOfString:@"=" withString:@"%3D"];
-    message = [message stringByReplacingOccurrencesOfString:@"&" withString:@"%26"];
-    
+//    message = [message stringByReplacingOccurrencesOfString:@":" withString:@"%3A"];
+//    message = [message stringByReplacingOccurrencesOfString:@"/" withString:@"%2F"];
+//    message = [message stringByReplacingOccurrencesOfString:@"?" withString:@"%3F"];
+//    message = [message stringByReplacingOccurrencesOfString:@"," withString:@"%2C"];
+//    message = [message stringByReplacingOccurrencesOfString:@"=" withString:@"%3D"];
+//    message = [message stringByReplacingOccurrencesOfString:@"&" withString:@"%26"];
+
+//    message = [message URLEncodedString];
 
     NSString	*urlWhats		= [NSString stringWithFormat:@"whatsapp://send?text=%@",message];
 	NSURL		*whatsappURL	= [NSURL URLWithString:[urlWhats stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
