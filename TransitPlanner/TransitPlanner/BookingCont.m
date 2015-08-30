@@ -126,16 +126,29 @@
     [request setTimeoutInterval:30.0];
     
     NSURLSessionDataTask *task = [[NSURLSession sharedSession] dataTaskWithRequest:request completionHandler:^(NSData * __nullable data, NSURLResponse * __nullable response, NSError * __nullable error) {
-        
-        NSDictionary *dictResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
-        NSLog(@"%@",dictResponse);
-        
-        self.loaderView.hidden = YES;
-        
-        DataManager *mgr = [DataManager sharedInstance];
-        mgr.delegate = self;
-        
-        [mgr parseHotelAPI:dictResponse];
+        if (error || response == nil) {
+            NSString *path = [[NSBundle mainBundle] pathForResource:@"getLocationHotelsCustom" ofType:@"json"];
+            NSData *fileData = [NSData dataWithContentsOfFile:path];
+            NSDictionary *dictResponse = [NSJSONSerialization JSONObjectWithData:fileData options:NSJSONReadingMutableLeaves error:&error];
+            NSLog(@"%@",dictResponse);
+            
+            self.loaderView.hidden = YES;
+            
+            DataManager *mgr = [DataManager sharedInstance];
+            mgr.delegate = self;
+            
+            [mgr parseHotelAPI:dictResponse];
+        } else {
+            NSDictionary *dictResponse = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
+            NSLog(@"%@",dictResponse);
+            
+            self.loaderView.hidden = YES;
+            
+            DataManager *mgr = [DataManager sharedInstance];
+            mgr.delegate = self;
+            
+            [mgr parseHotelAPI:dictResponse];
+        }
     }];
     
     [task resume];

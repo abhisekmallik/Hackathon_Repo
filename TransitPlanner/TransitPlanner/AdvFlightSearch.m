@@ -32,10 +32,20 @@
     [_baseScrollView addSubview:_viewAdvSrch1];
     
     frame = _viewAdvSrch2.frame;
-    frame.origin = CGPointMake(_viewAdvSrch1.frame.size.width, 0);
+    frame.origin = CGPointMake([UIScreen mainScreen].bounds.size.width, 0);
     _viewAdvSrch2.frame = frame;
     [_baseScrollView addSubview:_viewAdvSrch2];
     [_baseScrollView setScrollEnabled:NO];
+    
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(leftTopBarButtonClickedAction:)];
+    
+    self.navigationController.topViewController.navigationItem.leftBarButtonItem = leftBtn;
+}
+
+- (void)leftTopBarButtonClickedAction:(UIBarButtonItem *)button
+{
+    // Use Navigation Controller's category instead of view controller methods
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -54,7 +64,7 @@
 */
 
 - (IBAction)srch1Action:(UIButton *)sender {
-    [_baseScrollView setContentOffset:CGPointMake(320, 0) animated:YES];
+    [_baseScrollView setContentOffset:CGPointMake([UIScreen mainScreen].bounds.size.width, 0) animated:YES];
 }
 
 - (IBAction)srch2Action:(UIButton *)sender {

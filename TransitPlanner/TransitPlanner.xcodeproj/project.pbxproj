@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A06C8AB1B92D6DD003BD637 /* getLocationHotelsCustom.json in Resources */ = {isa = PBXBuildFile; fileRef = 1A06C8AA1B92D6DD003BD637 /* getLocationHotelsCustom.json */; };
 		1A44C4E21B8CE5C300AB1F4F /* FlightSearchVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A44C4E01B8CE5C300AB1F4F /* FlightSearchVC.m */; };
 		1A44C4E31B8CE5C300AB1F4F /* FlightSearchVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A44C4E11B8CE5C300AB1F4F /* FlightSearchVC.xib */; };
 		1A44C4E61B8CE79E00AB1F4F /* UIColor+CustomColors.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A44C4E51B8CE79E00AB1F4F /* UIColor+CustomColors.m */; };
@@ -45,17 +46,17 @@
 		1A4E584D1B9058D200050267 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A4E584C1B9058D200050267 /* CoreText.framework */; };
 		1A4E58541B9072D600050267 /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A4E58521B9072D600050267 /* MapView.m */; };
 		1A4E58551B9072D600050267 /* MapView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A4E58531B9072D600050267 /* MapView.xib */; };
-		1A5FF8341B9091B100146F6B /* PackageDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF8321B9091B100146F6B /* PackageDetailsViewController.m */; settings = {ASSET_TAGS = (); }; };
-		1A5FF8351B9091B100146F6B /* PackageDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF8331B9091B100146F6B /* PackageDetailsViewController.xib */; settings = {ASSET_TAGS = (); }; };
-		1A5FF8391B90B55300146F6B /* WebDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF8371B90B55300146F6B /* WebDisplay.m */; settings = {ASSET_TAGS = (); }; };
-		1A5FF83A1B90B55300146F6B /* WebDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF8381B90B55300146F6B /* WebDisplay.xib */; settings = {ASSET_TAGS = (); }; };
-		1A5FF83F1B90D5BE00146F6B /* ReviewItinerary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF83D1B90D5BD00146F6B /* ReviewItinerary.m */; settings = {ASSET_TAGS = (); }; };
-		1A5FF8401B90D5BE00146F6B /* ReviewItinerary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF83E1B90D5BE00146F6B /* ReviewItinerary.xib */; settings = {ASSET_TAGS = (); }; };
-		1A6374A71B91012600156849 /* ConfirmTransit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6374A51B91012600156849 /* ConfirmTransit.m */; settings = {ASSET_TAGS = (); }; };
-		1A6374A81B91012600156849 /* ConfirmTransit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6374A61B91012600156849 /* ConfirmTransit.xib */; settings = {ASSET_TAGS = (); }; };
-		1A6374AC1B910C5A00156849 /* CouponDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6374AA1B910C5A00156849 /* CouponDisplay.m */; settings = {ASSET_TAGS = (); }; };
-		1A6374AD1B910C5A00156849 /* CouponDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6374AB1B910C5A00156849 /* CouponDisplay.xib */; settings = {ASSET_TAGS = (); }; };
-		1A6374B01B91280000156849 /* WASWhatsAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6374AF1B91280000156849 /* WASWhatsAppUtil.m */; settings = {ASSET_TAGS = (); }; };
+		1A5FF8341B9091B100146F6B /* PackageDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF8321B9091B100146F6B /* PackageDetailsViewController.m */; };
+		1A5FF8351B9091B100146F6B /* PackageDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF8331B9091B100146F6B /* PackageDetailsViewController.xib */; };
+		1A5FF8391B90B55300146F6B /* WebDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF8371B90B55300146F6B /* WebDisplay.m */; };
+		1A5FF83A1B90B55300146F6B /* WebDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF8381B90B55300146F6B /* WebDisplay.xib */; };
+		1A5FF83F1B90D5BE00146F6B /* ReviewItinerary.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A5FF83D1B90D5BD00146F6B /* ReviewItinerary.m */; };
+		1A5FF8401B90D5BE00146F6B /* ReviewItinerary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A5FF83E1B90D5BE00146F6B /* ReviewItinerary.xib */; };
+		1A6374A71B91012600156849 /* ConfirmTransit.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6374A51B91012600156849 /* ConfirmTransit.m */; };
+		1A6374A81B91012600156849 /* ConfirmTransit.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6374A61B91012600156849 /* ConfirmTransit.xib */; };
+		1A6374AC1B910C5A00156849 /* CouponDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6374AA1B910C5A00156849 /* CouponDisplay.m */; };
+		1A6374AD1B910C5A00156849 /* CouponDisplay.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A6374AB1B910C5A00156849 /* CouponDisplay.xib */; };
+		1A6374B01B91280000156849 /* WASWhatsAppUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6374AF1B91280000156849 /* WASWhatsAppUtil.m */; };
 		1A6A38C21B862AF5009DF74D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C11B862AF5009DF74D /* main.m */; };
 		1A6A38C51B862AF5009DF74D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A6A38C41B862AF5009DF74D /* AppDelegate.m */; };
 		1A6A38CD1B862AF5009DF74D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A6A38CC1B862AF5009DF74D /* Assets.xcassets */; };
@@ -96,6 +97,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1A06C8AA1B92D6DD003BD637 /* getLocationHotelsCustom.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = getLocationHotelsCustom.json; sourceTree = "<group>"; };
 		1A44C4DF1B8CE5C300AB1F4F /* FlightSearchVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlightSearchVC.h; sourceTree = "<group>"; };
 		1A44C4E01B8CE5C300AB1F4F /* FlightSearchVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FlightSearchVC.m; sourceTree = "<group>"; };
 		1A44C4E11B8CE5C300AB1F4F /* FlightSearchVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FlightSearchVC.xib; sourceTree = "<group>"; };
@@ -403,6 +405,7 @@
 		1A6A38C01B862AF5009DF74D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1A06C8AA1B92D6DD003BD637 /* getLocationHotelsCustom.json */,
 				1A5FF83B1B90D57600146F6B /* Framework */,
 				1AE8E3341B8E292900CFC017 /* final_brochure_25sept2014_v2.pdf */,
 				1A6A38C11B862AF5009DF74D /* main.m */,
@@ -554,6 +557,7 @@
 				1AE8E33A1B8E2A1900CFC017 /* PackageOverview.xib in Resources */,
 				1A4E57F81B8F976000050267 /* CHANGELOG in Resources */,
 				1A6374A81B91012600156849 /* ConfirmTransit.xib in Resources */,
+				1A06C8AB1B92D6DD003BD637 /* getLocationHotelsCustom.json in Resources */,
 				1A4E58551B9072D600050267 /* MapView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -729,7 +733,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.enterprise.EKiPhone;
 				PRODUCT_NAME = "Hello Dubai";
-				PROVISIONING_PROFILE = "c01a61b2-debc-4498-9569-f1cb963699cd";
+				PROVISIONING_PROFILE = "e0d4981a-318a-4e5b-b3ee-bf11a49c7e8b";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -749,7 +753,7 @@
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.emirates.enterprise.EKiPhone;
 				PRODUCT_NAME = "Hello Dubai";
-				PROVISIONING_PROFILE = "c01a61b2-debc-4498-9569-f1cb963699cd";
+				PROVISIONING_PROFILE = "e0d4981a-318a-4e5b-b3ee-bf11a49c7e8b";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

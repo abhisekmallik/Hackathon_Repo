@@ -22,6 +22,19 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    self.title = @"Map";
+    
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(leftTopBarButtonClickedAction:)];
+    
+    self.navigationController.topViewController.navigationItem.leftBarButtonItem = leftBtn;
+}
+
+
+- (void)leftTopBarButtonClickedAction:(UIBarButtonItem *)button
+{
+    // Use Navigation Controller's category instead of view controller methods
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,7 +64,8 @@
     //
     //    });
     
-    [GMSServices provideAPIKey:@"AIzaSyBiIw4eigxImLmP7uutjV3rtV2GSNq0n2k"];
+//    [GMSServices provideAPIKey:@"AIzaSyBiIw4eigxImLmP7uutjV3rtV2GSNq0n2k"];
+    [GMSServices provideAPIKey:@"AIzaSyAAQ1YOW6wY53kZz4sv9Tui89xrU33h7T0"];
     
     GMSServices *gmsServices = [GMSServices sharedServices];
     

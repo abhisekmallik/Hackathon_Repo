@@ -65,6 +65,17 @@
     _packageView.layer.shadowOpacity = 0.35f;
     _packageView.layer.shadowOffset = CGSizeMake(0.0f, 2.5f);
     _packageView.layer.shadowRadius = 2.5f;
+    
+    UIBarButtonItem *leftBtn = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(leftTopBarButtonClickedAction:)];
+    
+    self.navigationController.topViewController.navigationItem.leftBarButtonItem = leftBtn;
+}
+
+
+- (void)leftTopBarButtonClickedAction:(UIBarButtonItem *)button
+{
+    // Use Navigation Controller's category instead of view controller methods
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

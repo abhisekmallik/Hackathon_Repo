@@ -27,12 +27,12 @@
                     <animations/>
                 </imageView>
                 <view contentMode="scaleToFill" id="xpf-L4-rFV">
-                    <rect key="frame" x="0.0" y="385" width="320" height="119"/>
+                    <rect key="frame" x="0.0" y="383" width="320" height="121"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ILG-Sy-1eP">
-                            <rect key="frame" x="8" y="67" width="304" height="44"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="frame" x="8" y="69" width="304" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <animations/>
                             <color key="backgroundColor" red="0.84313725490196079" green="0.098039215686274508" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="fontDescription" name="EmiratesSB" family="Emirates SB" pointSize="17"/>
@@ -44,7 +44,7 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2yT-hO-hgR">
-                            <rect key="frame" x="8" y="8" width="304" height="51"/>
+                            <rect key="frame" x="8" y="10" width="304" height="51"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                             <animations/>
                             <string key="text">Congratulaions you are eligible to booking transit package for 48 hours. Please select your hotel and review your tour itinerary.</string>
@@ -66,7 +66,7 @@
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
-            <point key="canvasLocation" x="272" y="311"/>
+            <point key="canvasLocation" x="160" y="354"/>
         </view>
     </objects>
     <resources>
