@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15A263e" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
@@ -7,6 +7,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AdvFlightSearch">
             <connections>
                 <outlet property="baseScrollView" destination="I2Z-Dy-f9m" id="ZYn-h6-jGf"/>
+                <outlet property="imgSrch1" destination="Nri-l0-J04" id="7Ml-9C-WqZ"/>
+                <outlet property="imgSrch2" destination="0Eu-ux-8Au" id="pH5-xI-97O"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="viewAdvSrch1" destination="1LG-Nr-d2N" id="9wu-zp-GDm"/>
                 <outlet property="viewAdvSrch2" destination="nAr-SI-Qtz" id="5Ov-1F-F7o"/>
@@ -28,16 +30,16 @@
             <point key="canvasLocation" x="242" y="322"/>
         </view>
         <view contentMode="scaleToFill" id="1LG-Nr-d2N">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
-            <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adv_Search_1" id="Nri-l0-J04">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Nri-l0-J04">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <animations/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yP8-lM-e9J">
-                    <rect key="frame" x="13" y="447" width="294" height="43"/>
+                    <rect key="frame" x="0.0" y="492" width="320" height="76"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <animations/>
                     <connections>
@@ -47,20 +49,21 @@
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="610" y="264"/>
+            <point key="canvasLocation" x="609.5" y="263.5"/>
         </view>
         <view contentMode="scaleToFill" id="nAr-SI-Qtz">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Adv_Search_2" id="0Eu-ux-8Au">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="0Eu-ux-8Au">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     <animations/>
                 </imageView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DF2-La-9yx">
-                    <rect key="frame" x="14" y="448" width="294" height="43"/>
+                    <rect key="frame" x="0.0" y="485" width="320" height="83"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                     <animations/>
                     <connections>
@@ -70,14 +73,11 @@
             </subviews>
             <animations/>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <nil key="simulatedTopBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="976" y="264"/>
+            <point key="canvasLocation" x="1036.5" y="263.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="Adv_Search_1" width="320" height="503"/>
-        <image name="Adv_Search_2" width="320" height="504"/>
-    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

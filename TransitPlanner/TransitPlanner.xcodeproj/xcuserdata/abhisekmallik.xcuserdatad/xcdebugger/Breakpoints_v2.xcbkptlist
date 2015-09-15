@@ -19,5 +19,53 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TransitPlanner/AdvFlightSearch.m"
+            timestampString = "463995976.400547"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-viewDidLoad"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AdvFlightSearch viewDidLoad]"
+                  moduleName = "Hello Dubai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhisekmallik/Desktop/GIT_REPO/Hackathon_Repo/TransitPlanner/TransitPlanner/AdvFlightSearch.m"
+                  timestampString = "463996070.828469"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "117">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[AdvFlightSearch viewDidLoad]"
+                  moduleName = "Hello Dubai"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/abhisekmallik/Desktop/GIT_REPO/Hackathon_Repo/TransitPlanner/TransitPlanner/AdvFlightSearch.m"
+                  timestampString = "463996070.828579"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "43"
+                  endingLineNumber = "43"
+                  offsetFromSymbolStart = "545">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

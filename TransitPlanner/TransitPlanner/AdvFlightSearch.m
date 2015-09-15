@@ -9,12 +9,28 @@
 #import "AdvFlightSearch.h"
 #import "BookingCont.h"
 
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+#define IS_IPHONE (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define IS_RETINA ([[UIScreen mainScreen] scale] >= 2.0)
+
+#define SCREEN_WIDTH ([[UIScreen mainScreen] bounds].size.width)
+#define SCREEN_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+
+#define IS_IPHONE_4_OR_LESS (IS_IPHONE && SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (IS_IPHONE && SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (IS_IPHONE && SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (IS_IPHONE && SCREEN_MAX_LENGTH == 736.0)
+
 @interface AdvFlightSearch ()
 @property (strong, nonatomic) IBOutlet UIView *viewAdvSrch1;
 @property (strong, nonatomic) IBOutlet UIView *viewAdvSrch2;
 - (IBAction)srch1Action:(UIButton *)sender;
 - (IBAction)srch2Action:(UIButton *)sender;
 @property (weak, nonatomic) IBOutlet UIScrollView *baseScrollView;
+@property (weak, nonatomic) IBOutlet UIImageView *imgSrch1;
+@property (weak, nonatomic) IBOutlet UIImageView *imgSrch2;
 
 @end
 
@@ -24,12 +40,21 @@
     [super viewDidLoad];
     
     self.title = @"Flight Search";
-    
+    if (IS_IPHONE_4_OR_LESS || IS_IPHONE_5) {
+        _imgSrch1.image = [UIImage imageNamed:@"Adv_Search_1"];
+        _imgSrch2.image = [UIImage imageNamed:@"Adv_Search_2"];
+    } else if (IS_IPHONE_6 || IS_IPHONE_6P) {
+        _imgSrch1.image = [UIImage imageNamed:@"Adv_Search_iP6_1"];
+        _imgSrch2.image = [UIImage imageNamed:@"Adv_Search_iP6_2"];
+    }
+
     // Do any additional setup after loading the view from its nib.
     CGRect frame = _viewAdvSrch1.frame;
     frame.origin = CGPointMake(0, 0);
     _viewAdvSrch1.frame = frame;
     [_baseScrollView addSubview:_viewAdvSrch1];
+    
+    
     
     frame = _viewAdvSrch2.frame;
     frame.origin = CGPointMake([UIScreen mainScreen].bounds.size.width, 0);
